@@ -45,10 +45,7 @@ const SponsorsSection = () => {
               target="_blank"
               rel="noopener noreferrer"
               style={{ backgroundColor: sponsor.bg || 'transparent' }}
-              initial={{ opacity: 0, scale: 0.9 }}
-              whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
-              transition={{ delay: i * 0.1 }}
               className="group relative h-24 w-40 sm:h-28 sm:w-52 flex items-center justify-center p-4 border border-border/40 bg-secondary/5 rounded-xl hover:border-primary/40 hover:bg-secondary/10 transition-all duration-300"
             >
               <img
