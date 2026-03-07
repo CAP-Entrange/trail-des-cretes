@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import heroImage from "@/assets/hero-cretes.png";
+import clubLogo from "@/assets/logo-club.png";
 import Countdown from "./Countdown";
 
 const HeroSection = () => {
@@ -16,6 +17,20 @@ const HeroSection = () => {
       </div>
 
       <div className="relative z-10 text-center px-4 max-w-4xl mx-auto">
+        <motion.div
+          initial={{ opacity: 0, scale: 0.8 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ delay: 0.1 }}
+          className="mx-auto mb-6 w-32 h-32 sm:w-40 sm:h-40 relative"
+        >
+          <div className="absolute inset-0 rounded-full bg-background" />
+          <img
+            src={clubLogo}
+            alt="Logo du club"
+            className="relative z-10 w-full h-full object-contain"
+          />
+        </motion.div>
+
         <motion.p
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
