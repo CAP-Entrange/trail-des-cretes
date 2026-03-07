@@ -37,8 +37,15 @@ const HeroSection = () => {
           transition={{ delay: 0.2 }}
           className="uppercase tracking-[0.3em] text-primary text-sm sm:text-base mb-6"
         >
-          Sur les traces des défenseurs
+          Là où le silence de l'acier rencontre l'effort.
         </motion.p>
+        {/* 
+          L'histoire au pas de course.
+          Héritiers du béton, maîtres des cimes.
+          Là où le silence de l'acier rencontre l'effort.
+          Entre ciel de traîne et racines de fer.
+          La Mémoire sous chaque Foulée.
+         */}
 
         <motion.h1
           initial={{ opacity: 0, y: 30 }}

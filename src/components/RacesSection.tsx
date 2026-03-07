@@ -14,9 +14,9 @@ const races = [
     elevation: "380m D+",
     slogan: "Vigilance et rapidité.",
     description:
-      "Un format nerveux qui simule les déplacements rapides des estafettes entre les blocs de combat. Le tracé alterne relances sèches et sentiers sinueux en lisière de forêt. Idéal pour ceux qui veulent tester leur vitesse sur un terrain chargé d'histoire.",
+      "Un format nerveux qui simule les déplacements rapides des Coureur de liaison entre les blocs de combat. Le tracé alterne relances sèches et sentiers sinueux en lisière de forêt. Idéal pour ceux qui veulent tester leur vitesse sur un terrain chargé d'histoire.",
     funFact:
-      "Les soldats de la Ligne Maginot, surnommés les « Écrevisses du Rempart », vivaient à 30 mètres sous terre. Pour maintenir le lien avec la surface et les autres ouvrages, des patrouilles de liaison parcouraient quotidiennement ces chemins, peu importe la météo. Courir ce 13 km, c'est endosser le rôle de ces messagers de l'ombre qui assuraient la survie du secteur fortifié de Thionville.",
+      "Les soldats de la Ligne Maginot, surnommés les « Écrevisses du Rempart », vivaient à 30 mètres sous terre. Pour maintenir le lien avec la surface et les autres ouvrages, des patrouilles de liaison parcouraient quotidiennement ces chemins, peu importe la météo. Courir ce 12 km, c'est endosser le rôle de ces messagers de l'ombre qui assuraient la survie du secteur fortifié de Thionville.",
   },
   {
     distance: "21 km",
@@ -40,7 +40,7 @@ const races = [
     description:
       "L'épreuve reine. Un parcours sauvage qui repousse les frontières de l'effort. Vous traverserez l'intégralité de la ligne de défense, là où la nature a repris ses droits sur les fortifications. Une immersion totale entre les blocs de l'Immerhof et les crêtes frontalières, une épopée où le mental prend le relais sur les jambes.",
     funFact:
-      "« On ne passe pas ! » était la devise des troupes de forteresse. Les galeries de l'ouvrage d'Entrange étaient conçues pour être totalement autonomes pendant 3 mois (usine électrique, hôpital, cuisines). En courant ce 31 km, vous traversez un « vaisseau de terre » immobile. On raconte que lors des nuits calmes, le vent dans les arbres des crêtes imite le murmure des ventilations de l'époque, rappelant que sous vos pieds, l'histoire respire encore.",
+      "« On ne passe pas ! » était la devise des troupes de forteresse. Les galeries de l'ouvrage d'Entrange étaient conçues pour être totalement autonomes pendant plusieurs semaines (usine électrique, hôpital, cuisines). En courant ce 31 km, vous traversez un « vaisseau de terre » immobile. On raconte que lors des nuits calmes, le vent dans les arbres des crêtes imite le murmure des ventilations de l'époque, rappelant que sous vos pieds, l'histoire respire encore.",
   },
 ];
 
