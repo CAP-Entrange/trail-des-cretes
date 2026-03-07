@@ -1,8 +1,14 @@
 import RaceCard from "./RaceCard";
 
+import grade12Logo from "@/assets/grade_12k.png";
+import grade21Logo from "@/assets/grade_21k.png";
+import grade31Logo from "@/assets/grade_31k.png";
+
+
 const races = [
   {
     distance: "13 km",
+    grade: grade12Logo,
     title: "La Patrouille de Liaison",
     subtitle: "L'agilité du guetteur",
     elevation: "350m D+",
@@ -14,6 +20,7 @@ const races = [
   },
   {
     distance: "21 km",
+    grade: grade21Logo,
     title: "La Traversée des Blocs",
     subtitle: "L'endurance du béton",
     elevation: "600m D+",
@@ -25,6 +32,7 @@ const races = [
   },
   {
     distance: "31 km",
+    grade: grade31Logo,
     title: "Le Mur des Crêtes",
     subtitle: "L'ultime résistance",
     elevation: "850m D+",
