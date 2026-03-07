@@ -35,41 +35,61 @@ const HeroSection = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.2 }}
-          className="uppercase tracking-[0.3em] text-primary text-sm sm:text-base mb-4"
+          className="uppercase tracking-[0.3em] text-primary text-sm sm:text-base mb-6"
         >
-          Trail des fortifications
+          Sur les traces des défenseurs
         </motion.p>
 
         <motion.h1
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.4 }}
-          className="font-display text-6xl sm:text-8xl md:text-9xl leading-none text-gradient-amber mb-2"
+          className="font-display text-3xl sm:text-5xl md:text-6xl leading-none text-foreground/80 mb-2"
         >
-          Les Crêtes
+          Le trail des crêtes
         </motion.h1>
         <motion.h2
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.5 }}
-          className="font-display text-3xl sm:text-5xl md:text-6xl text-foreground/80 mb-8"
+          className="font-display text-5xl sm:text-7xl md:text-8xl text-gradient-amber  mb-8"
         >
           d'Entrange
         </motion.h2>
 
-        <motion.p
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 0.7 }}
-          className="text-lg sm:text-xl text-muted-foreground mb-2"
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.7, duration: 0.5 }}
+          className="flex flex-wrap items-center justify-center gap-3 text-muted-foreground mb-8"
         >
-          20 septembre 2026 — Départ 10h00
-        </motion.p>
+          {/* Date */}
+          <div className="flex items-center gap-2">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="lucide lucide-calendar w-4 h-4 text-primary"><path d="M8 2v4"></path><path d="M16 2v4"></path><rect width="18" height="18" x="3" y="4" rx="2"></rect><path d="M3 10h18"></path></svg>
+            <span className="text-lg">20 Septembre 2026</span>
+          </div>
+
+          <span className="text-primary hidden sm:block">•</span>
+
+          {/* Heure */}
+          <div className="flex items-center gap-2">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="lucide lucide-clock w-4 h-4 text-primary"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+            <span className="text-lg">10h00</span>
+          </div>
+
+          <span className="text-primary hidden sm:block">•</span>
+
+          {/* Lieu */}
+          <div className="flex items-center gap-2">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="lucide lucide-map-pin w-4 h-4 text-primary"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            <span className="text-lg">Entrange, Moselle</span>
+          </div>
+        </motion.div>
 
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.9 }}
+          transition={{ delay: 0.7, duration: 0.5 }}
           className="mb-10"
         >
           <Countdown />
