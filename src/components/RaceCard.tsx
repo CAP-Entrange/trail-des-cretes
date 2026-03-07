@@ -4,6 +4,7 @@ import { ChevronDown } from "lucide-react";
 
 interface RaceCardProps {
   distance: string;
+  grade: any;
   title: string;
   subtitle: string;
   elevation: string;
