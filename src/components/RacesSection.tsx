@@ -7,11 +7,11 @@ import grade31Logo from "@/assets/grade_31k.png";
 
 const races = [
   {
-    distance: "13 km",
+    distance: "12 km",
     grade: grade12Logo,
     title: "La Patrouille de Liaison",
     subtitle: "L'agilité du guetteur",
-    elevation: "350m D+",
+    elevation: "380m D+",
     slogan: "Vigilance et rapidité.",
     description:
       "Un format nerveux qui simule les déplacements rapides des estafettes entre les blocs de combat. Le tracé alterne relances sèches et sentiers sinueux en lisière de forêt. Idéal pour ceux qui veulent tester leur vitesse sur un terrain chargé d'histoire.",
@@ -23,7 +23,7 @@ const races = [
     grade: grade21Logo,
     title: "La Traversée des Blocs",
     subtitle: "L'endurance du béton",
-    elevation: "600m D+",
+    elevation: "650m D+",
     slogan: "Tenir bon, coûte que coûte.",
     description:
       "Une distance exigeante qui vous emmène sur les hauteurs stratégiques. Les montées sont abruptes, comme pour conquérir un observatoire d'artillerie. Le terrain est technique, mêlant racines et vestiges bétonnés, demandant une concentration constante et une force physique à toute épreuve.",
@@ -35,7 +35,7 @@ const races = [
     grade: grade31Logo,
     title: "Le Mur des Crêtes",
     subtitle: "L'ultime résistance",
-    elevation: "850m D+",
+    elevation: "1050m D+",
     slogan: "On ne passe pas !",
     description:
       "L'épreuve reine. Un parcours sauvage qui repousse les frontières de l'effort. Vous traverserez l'intégralité de la ligne de défense, là où la nature a repris ses droits sur les fortifications. Une immersion totale entre les blocs de l'Immerhof et les crêtes frontalières, une épopée où le mental prend le relais sur les jambes.",

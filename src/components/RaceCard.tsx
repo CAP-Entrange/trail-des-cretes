@@ -61,7 +61,8 @@ const RaceCard = ({
           {title}
         </h3>
         <p className="text-primary italic text-sm mb-3">« {subtitle} »</p>
-        <p className="text-muted-foreground text-sm italic mb-4">"{slogan}"</p>
+        <p className="text-muted-foreground text-xs uppercase tracking-widest mb-4">{slogan}</p>
+        <div data-orientation="horizontal" role="none" className="shrink-0 h-[1px] w-full mb-4 bg-border"></div>
         <p className="text-foreground/80 text-sm leading-relaxed mb-4">
           {description}
         </p>
