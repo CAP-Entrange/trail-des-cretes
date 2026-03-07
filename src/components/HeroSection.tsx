@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import heroImage from "@/assets/hero-cretes.png";
+import clubLogo from "@/assets/logo-club.png";
 import Countdown from "./Countdown";
 
 const HeroSection = () => {
