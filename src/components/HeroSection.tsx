@@ -21,7 +21,7 @@ const HeroSection = () => {
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ delay: 0.1 }}
-          className="mx-auto mb-6 w-32 h-32 sm:w-40 sm:h-40 relative"
+          className="mx-auto mb-6 w-64 h-64 sm:w-80 sm:h-80 relative"
         >
           <div className="absolute inset-0 rounded-full bg-background" />
           <img
