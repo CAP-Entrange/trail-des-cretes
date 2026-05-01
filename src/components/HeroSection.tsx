@@ -50,10 +50,25 @@ const HeroSection = () => {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.5 }}
-          className="font-display text-5xl sm:text-7xl md:text-8xl text-gradient-amber  mb-8"
+          className="font-display text-5xl sm:text-7xl md:text-8xl text-gradient-amber  mb-6"
         >
           d'Entrange
         </motion.h2>
+
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.6 }}
+          className="flex flex-wrap items-center justify-center gap-4 mb-8"
+        >
+          <span className="border border-primary/50 text-primary font-display tracking-widest text-sm sm:text-base px-4 py-1.5">
+            {event.edition}ème édition
+          </span>
+          <span className="text-muted-foreground hidden sm:block">·</span>
+          <span className="text-muted-foreground text-sm sm:text-base">
+            {event.lastYearParticipants} participants l'an dernier
+          </span>
+        </motion.div>
 
         <motion.div
           initial={{ opacity: 0, y: 20 }}

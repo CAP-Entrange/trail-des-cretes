@@ -30,7 +30,8 @@ const ClubModal = ({ children }: ClubModalProps) => {
           <div className="space-y-3 text-sm sm:text-base text-foreground/80 leading-relaxed">
             <p>
               Le <span className="font-semibold text-primary">{club.name}</span> est
-              un {club.description}
+              un {club.description} Le club fête cette année ses{" "}
+              <span className="font-semibold text-primary">{club.foundedYearsAgo} ans</span>.
             </p>
             <p>Nous courons ensemble deux fois par semaine :</p>
             <ul className="space-y-2 pl-4 list-none">

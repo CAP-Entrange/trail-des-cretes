@@ -40,6 +40,7 @@ import vitaLogo from "@/assets/sponsors/vita.png";
 export const club = {
   name: "CAP Entrange",
   logo: logoClub,
+  foundedYearsAgo: 11,
   description: "Club de course à pied basé à Entrange, qui court dans les environs : forêts, crêtes et chemins de trail des alentours de la frontière franco-luxembourgeoise.",
   sessions: [
     { day: "Mercredi soir", time: "19h", distance: "10–12 km" },
@@ -57,6 +58,8 @@ export const club = {
 export const event = {
   name: "Trail des Crêtes d'Entrange",
   organizer: "CAP Entrange",
+  edition: 9,
+  lastYearParticipants: 438,
   tagline: "Là où le silence de l'acier rencontre l'effort.",
   date: "20 Septembre 2026",
   isoDate: "2026-09-20T10:00:00+02:00",
