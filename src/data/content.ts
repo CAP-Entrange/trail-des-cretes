@@ -46,6 +46,10 @@ export const club = {
     { day: "Dimanche matin", time: "9h", distance: "14–16 km" },
   ],
   note: "Sorties principalement orientées trail — tous niveaux bienvenus !",
+  socials: {
+    facebook: "https://www.facebook.com/capentrange/",
+    instagram: "https://www.instagram.com/cap_entrange",
+  },
 };
 
 // ─── ÉVÉNEMENT ────────────────────────────────
