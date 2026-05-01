@@ -4,7 +4,8 @@ import { ChevronDown, Clock, Tag } from "lucide-react";
 
 interface RaceCardProps {
   distance: string;
-  grade: any;
+  grade: string | null;
+  ribbon?: string;
   title: string;
   subtitle: string;
   elevation: string;
@@ -19,6 +20,7 @@ interface RaceCardProps {
 const RaceCard = ({
   distance,
   grade,
+  ribbon,
   title,
   subtitle,
   elevation,
@@ -41,8 +43,13 @@ const RaceCard = ({
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: "-50px" }}
       transition={{ delay: index * 0.15 }}
-      className="bg-card border border-border hover:border-glow transition-colors duration-300 flex flex-col"
+      className="relative overflow-hidden bg-card border border-border hover:border-glow transition-colors duration-300 flex flex-col"
     >
+      {ribbon && (
+        <div className="absolute top-5 -right-8 w-36 bg-primary text-black text-[18px] font-display tracking-widest uppercase text-center py-0.5 rotate-45 shadow-md pointer-events-none">
+          {ribbon}
+        </div>
+      )}
       {/* Header */}
       <div className="p-6 sm:p-8 border-b border-border flex justify-between items-center">
         <div>

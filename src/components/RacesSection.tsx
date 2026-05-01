@@ -8,6 +8,21 @@ import grade31Logo from "@/assets/grade_31k.png";
 const races = [
   {
     distance: "12 km",
+    grade: null,
+    ribbon: "Marche",
+    title: "La Ronde des Sentinelles",
+    subtitle: "La mémoire sous les pieds",
+    elevation: "380m D+",
+    startTime: "10h30",
+    price: "5€",
+    slogan: "Marche — accessible à tous.",
+    description:
+      "Une randonnée guidée de 12 km sur les mêmes crêtes que les coureurs, sans la montre, sans le chrono. Familles, curieux et amoureux d'histoire sont les bienvenus. Chaque virage dévoile un vestige, chaque crête raconte un fragment de 1939. Ici, c'est le chemin qui compte.",
+    funFact:
+      "Lors de la drôle de guerre (1939–1940), des milliers de civils de la région furent évacués en 48h à peine. Beaucoup ne prirent que ce qu'ils pouvaient porter. Certains de ces chemins de crêtes étaient leurs seules routes de fuite. En marchant aujourd'hui, vous posez vos pas là où l'exode silencieux d'un peuple s'est joué.",
+  },
+  {
+    distance: "12 km",
     grade: grade12Logo,
     title: "La Patrouille de Liaison",
     subtitle: "L'agilité du guetteur",
@@ -58,11 +73,11 @@ const RacesSection = () => {
           🏃 Les Missions du Jour
         </h2>
         <p className="text-center text-muted-foreground mb-14 max-w-2xl mx-auto">
-          Trois distances, trois histoires. Choisissez votre mission sur les chemins de patrouille de la Ligne Maginot.
+          Une marche et trois courses. Choisissez votre mission sur les chemins de patrouille de la Ligne Maginot.
         </p>
-        <div className="grid md:grid-cols-3 gap-6">
+        <div className="grid sm:grid-cols-2 xl:grid-cols-4 gap-6">
           {races.map((race, i) => (
-            <RaceCard key={race.distance} {...race} index={i} />
+            <RaceCard key={race.title} {...race} index={i} />
           ))}
         </div>
       </div>
