@@ -19,7 +19,7 @@ const races = [
       "Les soldats de la Ligne Maginot, surnommés les « Écrevisses du Rempart », vivaient à 30 mètres sous terre. Pour maintenir le lien avec la surface et les autres ouvrages, des patrouilles de liaison parcouraient quotidiennement ces chemins, peu importe la météo. Courir ce 12 km, c'est endosser le rôle de ces messagers de l'ombre qui assuraient la survie du secteur fortifié de Thionville.",
   },
   {
-    distance: "21 km",
+    distance: "22 km",
     grade: grade21Logo,
     title: "La Traversée des Blocs",
     subtitle: "L'endurance du béton",
@@ -31,7 +31,7 @@ const races = [
       "Le secteur d'Entrange abrite des réseaux de galeries impressionnants. Saviez-vous que pour construire ces géants de béton, il a fallu acheminer des milliers de tonnes de matériaux sur ces mêmes crêtes à l'aide de voies ferrées étroites (système Decauville) ? Les pentes que vous grimpez aujourd'hui étaient autrefois le théâtre d'un défi logistique colossal, où chaque mètre de dénivelé était une victoire sur la roche.",
   },
   {
-    distance: "31 km",
+    distance: "32 km",
     grade: grade31Logo,
     title: "Le Mur des Crêtes",
     subtitle: "L'ultime résistance",

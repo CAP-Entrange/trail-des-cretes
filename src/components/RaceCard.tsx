@@ -27,6 +27,9 @@ const RaceCard = ({
 }: RaceCardProps) => {
   const [expanded, setExpanded] = useState(false);
 
+  // const url = "#inscription"
+  const url = "https://fr.milesrepublic.com/event/trail-des-cretes-dentrange-7158"
+
   return (
     <motion.div
       initial={{ opacity: 0, y: 40 }}
@@ -92,7 +95,7 @@ const RaceCard = ({
       {/* CTA */}
       <div className="p-6 sm:p-8 border-t border-border">
         <a
-          href="#inscription"
+          href={url}
           className="block text-center bg-primary text-primary-foreground font-display text-lg px-6 py-3 tracking-wider hover:brightness-110 transition-all"
         >
           S'engager — {distance}
