@@ -7,6 +7,7 @@
 
 import { TreePine, Heart, Backpack, Users, UtensilsCrossed, Car, Shirt, Sandwich, GlassWater, Flame, Star, Info } from "lucide-react";
 
+import logoClub from "@/assets/logo-club.png";
 import grade12Logo from "@/assets/grade_12k.png";
 import grade21Logo from "@/assets/grade_21k.png";
 import grade31Logo from "@/assets/grade_31k.png";
@@ -33,6 +34,19 @@ import concertauxLogo from "@/assets/sponsors/concertaux.png";
 import jsdCoiffureLogo from "@/assets/sponsors/jsd_coiffure.png";
 import saveurLogo from "@/assets/sponsors/saveur-et-gourmandise.png";
 import vitaLogo from "@/assets/sponsors/vita.png";
+
+// ─── CLUB ─────────────────────────────────────
+
+export const club = {
+  name: "CAP Entrange",
+  logo: logoClub,
+  description: "Club de course à pied basé à Entrange, qui court dans les environs : forêts, crêtes et chemins de trail des alentours de la frontière franco-luxembourgeoise.",
+  sessions: [
+    { day: "Mercredi soir", time: "19h", distance: "10–12 km" },
+    { day: "Dimanche matin", time: "9h", distance: "14–16 km" },
+  ],
+  note: "Sorties principalement orientées trail — tous niveaux bienvenus !",
+};
 
 // ─── ÉVÉNEMENT ────────────────────────────────
 
