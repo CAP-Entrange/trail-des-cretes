@@ -1,7 +1,9 @@
 import { motion } from "framer-motion";
+import { Calendar, Clock, MapPin } from "lucide-react";
 import heroImage from "@/assets/hero-cretes.png";
 import Countdown from "./Countdown";
 import Logo from "./Logo";
+import { event } from "@/data/content";
 
 const HeroSection = () => {
   return (
@@ -26,7 +28,7 @@ const HeroSection = () => {
           transition={{ delay: 0.2 }}
           className="uppercase tracking-[0.3em] text-primary text-sm sm:text-base mb-6"
         >
-          Là où le silence de l'acier rencontre l'effort.
+          {event.tagline}
         </motion.p>
         {/* 
           L'histoire au pas de course.
@@ -61,24 +63,24 @@ const HeroSection = () => {
         >
           {/* Date */}
           <div className="flex items-center gap-2">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="lucide lucide-calendar w-4 h-4 text-primary"><path d="M8 2v4"></path><path d="M16 2v4"></path><rect width="18" height="18" x="3" y="4" rx="2"></rect><path d="M3 10h18"></path></svg>
-            <span className="text-lg">20 Septembre 2026</span>
+            <Calendar className="w-4 h-4 text-primary" />
+            <span className="text-lg">{event.date}</span>
           </div>
 
           <span className="text-primary hidden sm:block">•</span>
 
           {/* Heure */}
           <div className="flex items-center gap-2">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="lucide lucide-clock w-4 h-4 text-primary"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
-            <span className="text-lg">10h00</span>
+            <Clock className="w-4 h-4 text-primary" />
+            <span className="text-lg">{event.startTime}</span>
           </div>
 
           <span className="text-primary hidden sm:block">•</span>
 
           {/* Lieu */}
           <div className="flex items-center gap-2">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="lucide lucide-map-pin w-4 h-4 text-primary"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path><circle cx="12" cy="10" r="3"></circle></svg>
-            <span className="text-lg">Entrange, Moselle</span>
+            <MapPin className="w-4 h-4 text-primary" />
+            <span className="text-lg">{event.location}</span>
           </div>
         </motion.div>
 
