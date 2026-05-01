@@ -13,8 +13,11 @@ const CtaSection = () => {
         >
           Rejoignez les Sentinelles
         </motion.h2>
-        <p className="text-muted-foreground mb-10 max-w-xl mx-auto">
+        <p className="text-muted-foreground mb-4 max-w-xl mx-auto">
           Enfilez vos chaussures de trail et venez arpenter les chemins de patrouille. L'histoire vous attend sur les crêtes.
+        </p>
+        <p className="text-muted-foreground/60 text-sm mb-10">
+          Déjà <span className="text-primary font-semibold">{event.lastYearParticipants} coureurs</span> l'année dernière — et vous ?
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center">

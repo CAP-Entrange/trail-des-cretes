@@ -38,36 +38,28 @@ const HeroSection = () => {
           La Mémoire sous chaque Foulée.
          */}
 
-        <motion.h1
+        <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.4 }}
-          className="font-display text-3xl sm:text-5xl md:text-6xl leading-none text-foreground/80 mb-2"
+          className="inline-flex items-stretch gap-4 mb-8"
         >
-          Le trail des crêtes
-        </motion.h1>
-        <motion.h2
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.5 }}
-          className="font-display text-5xl sm:text-7xl md:text-8xl text-gradient-amber  mb-6"
-        >
-          d'Entrange
-        </motion.h2>
-
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.6 }}
-          className="flex flex-wrap items-center justify-center gap-4 mb-8"
-        >
-          <span className="border border-primary/50 text-primary font-display tracking-widest text-sm sm:text-base px-4 py-1.5">
-            {event.edition}ème édition
-          </span>
-          <span className="text-muted-foreground hidden sm:block">·</span>
-          <span className="text-muted-foreground text-sm sm:text-base">
-            {event.lastYearParticipants} participants l'an dernier
-          </span>
+          <div className="text-left">
+            <h1 className="font-display text-3xl sm:text-5xl md:text-6xl leading-none text-foreground/80 mb-2">
+              Le trail des crêtes
+            </h1>
+            <h2 className="font-display text-5xl sm:text-7xl md:text-8xl text-gradient-amber leading-none">
+              d'Entrange
+            </h2>
+          </div>
+          <div className="flex items-center gap-2 pl-2">
+            <div className="w-px self-stretch bg-primary/50" />
+            <span
+              className="font-display text-primary tracking-[0.25em] text-xs sm:text-sm [writing-mode:vertical-rl] rotate-180 uppercase"
+            >
+              {event.edition}ème édition
+            </span>
+          </div>
         </motion.div>
 
         <motion.div
