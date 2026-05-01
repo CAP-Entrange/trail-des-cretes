@@ -29,7 +29,7 @@ const Countdown = () => {
   ];
 
   return (
-    <div className="flex gap-3 sm:gap-5">
+    <div className="flex justify-center gap-6 md:gap-10 sm:gap-10">
       {units.map((u) => (
         <div key={u.label} className="flex flex-col items-center">
           <span className="font-display text-4xl sm:text-6xl text-primary animate-pulse-glow">

@@ -18,16 +18,13 @@ const CtaSection = () => {
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <a
-            href="#"
+            href="https://fr.milesrepublic.com/event/trail-des-cretes-dentrange-7158"
+            target="_blank"
             className="inline-block bg-primary text-primary-foreground font-display text-2xl px-10 py-5 tracking-wider hover:brightness-110 transition-all"
           >
             S'inscrire maintenant
           </a>
         </div>
-
-        <p className="text-muted-foreground text-xs mt-6">
-          20 septembre 2026 — Entrange, Moselle (57)
-        </p>
       </div>
     </section>
   );

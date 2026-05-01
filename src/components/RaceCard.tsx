@@ -4,6 +4,7 @@ import { ChevronDown } from "lucide-react";
 
 interface RaceCardProps {
   distance: string;
+  grade: any;
   title: string;
   subtitle: string;
   elevation: string;
@@ -15,6 +16,7 @@ interface RaceCardProps {
 
 const RaceCard = ({
   distance,
+  grade,
   title,
   subtitle,
   elevation,
@@ -34,11 +36,24 @@ const RaceCard = ({
       className="bg-card border border-border hover:border-glow transition-colors duration-300 flex flex-col"
     >
       {/* Header */}
-      <div className="p-6 sm:p-8 border-b border-border">
-        <span className="font-display text-5xl sm:text-6xl text-gradient-amber leading-none">
-          {distance}
-        </span>
-        <p className="text-muted-foreground text-sm mt-1">{elevation}</p>
+      <div className="p-6 sm:p-8 border-b border-border flex justify-between items-center">
+        <div>
+          <span className="font-display text-5xl sm:text-6xl text-gradient-amber leading-none">
+            {distance}
+          </span>
+          <p className="text-muted-foreground text-sm mt-1">{elevation}</p>
+        </div>
+
+        {/* Affichage du Grade à droite */}
+        { grade && (
+          <div className="h-20 w-20 sm:h-26 sm:w-26 flex items-center justify-center">
+            <img 
+              src={ grade} 
+              alt="Difficulté" 
+              className="h-full object-contain"
+            />
+          </div>
+        )}
       </div>
 
       {/* Body */}
@@ -47,7 +62,8 @@ const RaceCard = ({
           {title}
         </h3>
         <p className="text-primary italic text-sm mb-3">« {subtitle} »</p>
-        <p className="text-muted-foreground text-sm italic mb-4">"{slogan}"</p>
+        <p className="text-muted-foreground text-xs uppercase tracking-widest mb-4">{slogan}</p>
+        <div data-orientation="horizontal" role="none" className="shrink-0 h-[1px] w-full mb-4 bg-border"></div>
         <p className="text-foreground/80 text-sm leading-relaxed mb-4">
           {description}
         </p>
