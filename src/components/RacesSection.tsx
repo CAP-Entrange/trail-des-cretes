@@ -12,6 +12,8 @@ const races = [
     title: "La Patrouille de Liaison",
     subtitle: "L'agilité du guetteur",
     elevation: "380m D+",
+    startTime: "10h00",
+    price: "15€",
     slogan: "Vigilance et rapidité.",
     description:
       "Un format nerveux qui simule les déplacements rapides des Coureurs de liaison entre les blocs de combat. Le tracé alterne relances sèches et sentiers sinueux en lisière de forêt. Idéal pour ceux qui veulent tester leur vitesse sur un terrain chargé d'histoire.",
@@ -24,6 +26,8 @@ const races = [
     title: "La Traversée des Blocs",
     subtitle: "L'endurance du béton",
     elevation: "650m D+",
+    startTime: "09h00",
+    price: "18€",
     slogan: "Tenir bon, coûte que coûte.",
     description:
       "Une distance exigeante qui vous emmène sur les hauteurs stratégiques. Les montées sont abruptes, comme pour conquérir un observatoire d'artillerie. Le terrain est technique, mêlant racines et vestiges bétonnés, demandant une concentration constante et une force physique à toute épreuve.",
@@ -36,6 +40,8 @@ const races = [
     title: "Le Mur des Crêtes",
     subtitle: "L'ultime résistance",
     elevation: "1050m D+",
+    startTime: "08h00",
+    price: "20€",
     slogan: "On ne passe pas !",
     description:
       "L'épreuve reine. Un parcours sauvage qui repousse les frontières de l'effort. Vous traverserez l'intégralité de la ligne de défense, là où la nature a repris ses droits sur les fortifications. Une immersion totale entre les blocs de l'Immerhof et les crêtes frontalières, une épopée où le mental prend le relais sur les jambes.",

@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
-import { ChevronDown } from "lucide-react";
+import { ChevronDown, Clock, Tag } from "lucide-react";
 
 interface RaceCardProps {
   distance: string;
@@ -8,6 +8,8 @@ interface RaceCardProps {
   title: string;
   subtitle: string;
   elevation: string;
+  startTime: string;
+  price: string;
   slogan: string;
   description: string;
   funFact: string;
@@ -20,6 +22,8 @@ const RaceCard = ({
   title,
   subtitle,
   elevation,
+  startTime,
+  price,
   slogan,
   description,
   funFact,
@@ -29,6 +33,7 @@ const RaceCard = ({
 
   // const url = "#inscription"
   const url = "https://fr.milesrepublic.com/event/trail-des-cretes-dentrange-7158"
+  const target = "_blank"
 
   return (
     <motion.div
@@ -45,6 +50,16 @@ const RaceCard = ({
             {distance}
           </span>
           <p className="text-muted-foreground text-sm mt-1">{elevation}</p>
+          <div className="flex items-center gap-3 mt-2">
+            <span className="flex items-center gap-1 text-xs text-muted-foreground">
+              <Clock className="w-3.5 h-3.5" />
+              {startTime}
+            </span>
+            <span className="flex items-center gap-1 text-xs font-medium text-primary">
+              <Tag className="w-3.5 h-3.5" />
+              {price}
+            </span>
+          </div>
         </div>
 
         {/* Affichage du Grade à droite */}
@@ -95,7 +110,7 @@ const RaceCard = ({
       {/* CTA */}
       <div className="p-6 sm:p-8 border-t border-border">
         <a
-          href={url}
+          href={url} target={target}
           className="block text-center bg-primary text-primary-foreground font-display text-lg px-6 py-3 tracking-wider hover:brightness-110 transition-all"
         >
           S'engager — {distance}
