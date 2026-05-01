@@ -5,7 +5,7 @@
 //  mettre à jour le site.
 // ─────────────────────────────────────────────
 
-import { TreePine, Heart, Backpack, Users, UtensilsCrossed } from "lucide-react";
+import { TreePine, Heart, Backpack, Users, UtensilsCrossed, Car, Shirt, Sandwich, GlassWater, Flame, Star, Info } from "lucide-react";
 
 import grade12Logo from "@/assets/grade_12k.png";
 import grade21Logo from "@/assets/grade_21k.png";
@@ -144,6 +144,42 @@ export const rules = [
     text: "Ne gaspillez pas les ressources. Servez-vous à la « cantine » avec mesure pour permettre à toutes les unités de tenir jusqu'à l'arrivée.",
   },
 ];
+
+// ─── LOGISTIQUE & RESTAURATION ────────────────
+
+export const logistique = [
+  {
+    icon: Car,
+    title: "Parking",
+    text: "Parking gratuit à 3 min de l'A31 (sortie Thionville-Uckange). Places limitées — venez tôt ou covoiturez !",
+  },
+  {
+    icon: Shirt,
+    title: "Vestiaires & Douches",
+    text: "Vestiaires et douches disponibles sur place pour vous rafraîchir après l'effort.",
+  },
+];
+
+export const restauration = {
+  pack: {
+    icon: Star,
+    label: "Pack Course + Sandwich & Boisson",
+    description: "Optionnel à l'inscription — économisez en réservant à l'avance.",
+    price: "+6 €",
+  },
+  consigne: {
+    icon: Info,
+    text: "Consigne verre",
+    price: "1 €",
+    note: "remboursée à la restitution",
+  },
+  menu: [
+    { icon: Sandwich, label: "Sandwich" },
+    { icon: GlassWater, label: "Soft / Bière / Crémant" },
+    { icon: Flame, label: "Frites" },
+    { icon: Star, label: "Crêpes" },
+  ],
+};
 
 // ─── SPONSORS ─────────────────────────────────
 
