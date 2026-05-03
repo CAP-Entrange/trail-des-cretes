@@ -24,13 +24,13 @@ const HeroSection = () => {
 
   const handleVideoEnd = useCallback(() => {
     setShowPhoto(true);
-    setTimeout(() => {
+    /*setTimeout(() => {
       setShowPhoto(false);
       if (videoRef.current) {
         videoRef.current.currentTime = 0;
         videoRef.current.play();
       }
-    }, PHOTO_PAUSE_MS);
+    }, PHOTO_PAUSE_MS);*/
   }, []);
 
   return (
