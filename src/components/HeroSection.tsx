@@ -47,8 +47,8 @@ const HeroSection = () => {
           onEnded={handleVideoEnd}
           className="absolute inset-0 w-full h-full object-cover"
         >
-          <source src="/videos/hero-drone.webm" type="video/webm" />
-          <source src="/videos/hero-drone.mp4" type="video/mp4" />
+          <source src={`${import.meta.env.BASE_URL}videos/hero-drone.webm`} type="video/webm" />
+          <source src={`${import.meta.env.BASE_URL}videos/hero-drone.mp4`} type="video/mp4" />
         </video>
         {/* Photo affichée pendant la pause entre deux passages vidéo */}
         <img
