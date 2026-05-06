@@ -1,28 +1,36 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
-import { ChevronDown } from "lucide-react";
+import { ChevronDown, Clock, Tag } from "lucide-react";
 
 interface RaceCardProps {
   distance: string;
-  grade: any;
+  grade: string | null;
+  ribbon?: string;
   title: string;
   subtitle: string;
   elevation: string;
+  startTime: string;
+  price: string;
   slogan: string;
   description: string;
   funFact: string;
+  registrationUrl: string;
   index: number;
 }
 
 const RaceCard = ({
   distance,
   grade,
+  ribbon,
   title,
   subtitle,
   elevation,
+  startTime,
+  price,
   slogan,
   description,
   funFact,
+  registrationUrl,
   index,
 }: RaceCardProps) => {
   const [expanded, setExpanded] = useState(false);
@@ -33,8 +41,13 @@ const RaceCard = ({
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: "-50px" }}
       transition={{ delay: index * 0.15 }}
-      className="bg-card border border-border hover:border-glow transition-colors duration-300 flex flex-col"
+      className="relative overflow-hidden bg-card border border-border hover:border-glow transition-colors duration-300 flex flex-col"
     >
+      {ribbon && (
+        <div className="absolute top-5 -right-8 w-36 bg-primary text-black text-[18px] font-display tracking-widest uppercase text-center py-0.5 rotate-45 shadow-md pointer-events-none">
+          {ribbon}
+        </div>
+      )}
       {/* Header */}
       <div className="p-6 sm:p-8 border-b border-border flex justify-between items-center">
         <div>
@@ -42,6 +55,16 @@ const RaceCard = ({
             {distance}
           </span>
           <p className="text-muted-foreground text-sm mt-1">{elevation}</p>
+          <div className="flex items-center gap-3 mt-2">
+            <span className="flex items-center gap-1 text-xs text-muted-foreground">
+              <Clock className="w-3.5 h-3.5" />
+              {startTime}
+            </span>
+            <span className="flex items-center gap-1 text-xs font-medium text-primary">
+              <Tag className="w-3.5 h-3.5" />
+              {price}
+            </span>
+          </div>
         </div>
 
         {/* Affichage du Grade à droite */}
@@ -92,7 +115,7 @@ const RaceCard = ({
       {/* CTA */}
       <div className="p-6 sm:p-8 border-t border-border">
         <a
-          href="#inscription"
+          href={registrationUrl} target="_blank"
           className="block text-center bg-primary text-primary-foreground font-display text-lg px-6 py-3 tracking-wider hover:brightness-110 transition-all"
         >
           S'engager — {distance}

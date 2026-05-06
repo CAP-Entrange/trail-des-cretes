@@ -1,17 +1,60 @@
+import { useRef, useState, useCallback } from "react";
 import { motion } from "framer-motion";
+import { Calendar, Clock, MapPin } from "lucide-react";
 import heroImage from "@/assets/hero-cretes.png";
 import Countdown from "./Countdown";
 import Logo from "./Logo";
+import { event } from "@/data/content";
+
+/*
+Quand la vidéo arrivera
+
+     1. Convertir en WebM + MP4 si nécessaire (ex: HandBrake, FFmpeg)
+     2. Recommandé : résolution 1920×1080 max, bitrate ~4-6 Mbps, durée 15-30s
+     3. Déposer dans public/videos/ sous les noms hero-drone.webm et hero-drone.mp4
+     4. C'est tout — le code est déjà en place
+*/
+
+// Durée d'affichage de la photo entre deux passages de la vidéo (ms)
+const PHOTO_PAUSE_MS = 8000;
 
 const HeroSection = () => {
+  const videoRef = useRef<HTMLVideoElement>(null);
+  const [showPhoto, setShowPhoto] = useState(false);
+
+  const handleVideoEnd = useCallback(() => {
+    setShowPhoto(true);
+    /*setTimeout(() => {
+      setShowPhoto(false);
+      if (videoRef.current) {
+        videoRef.current.currentTime = 0;
+        videoRef.current.play();
+      }
+    }, PHOTO_PAUSE_MS);*/
+  }, []);
+
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Background image */}
-      <div className="absolute inset-0">
+      {/* Background video / image fallback */}
+      <div className="absolute inset-0 overflow-hidden">
+        <video
+          ref={videoRef}
+          autoPlay
+          muted
+          playsInline
+          poster={heroImage}
+          preload="auto"
+          onEnded={handleVideoEnd}
+          className="absolute inset-0 w-full h-full object-cover"
+        >
+          <source src={`${import.meta.env.BASE_URL}videos/hero-drone.webm`} type="video/webm" />
+          <source src={`${import.meta.env.BASE_URL}videos/hero-drone.mp4`} type="video/mp4" />
+        </video>
+        {/* Photo affichée pendant la pause entre deux passages vidéo */}
         <img
           src={heroImage}
           alt="Les Crêtes d'Entrange - paysage brumeux avec bunker"
-          className="w-full h-full object-cover"
+          className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ${showPhoto ? "opacity-100" : "opacity-0"}`}
         />
         <div className="absolute inset-0 bg-gradient-to-b from-background/70 via-background/50 to-background" />
       </div>
@@ -26,7 +69,7 @@ const HeroSection = () => {
           transition={{ delay: 0.2 }}
           className="uppercase tracking-[0.3em] text-primary text-sm sm:text-base mb-6"
         >
-          Là où le silence de l'acier rencontre l'effort.
+          {event.tagline}
         </motion.p>
         {/* 
           L'histoire au pas de course.
@@ -36,22 +79,29 @@ const HeroSection = () => {
           La Mémoire sous chaque Foulée.
          */}
 
-        <motion.h1
+        <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.4 }}
-          className="font-display text-3xl sm:text-5xl md:text-6xl leading-none text-foreground/80 mb-2"
+          className="inline-flex items-stretch gap-4 mb-8"
         >
-          Le trail des crêtes
-        </motion.h1>
-        <motion.h2
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.5 }}
-          className="font-display text-5xl sm:text-7xl md:text-8xl text-gradient-amber  mb-8"
-        >
-          d'Entrange
-        </motion.h2>
+          <div className="text-left">
+            <h1 className="font-display text-3xl sm:text-5xl md:text-6xl leading-none text-foreground/80 mb-2">
+              Le trail des crêtes
+            </h1>
+            <h2 className="font-display text-5xl sm:text-7xl md:text-8xl text-gradient-amber leading-none">
+              d'Entrange
+            </h2>
+          </div>
+          <div className="flex items-center gap-2 pl-2">
+            <div className="w-px self-stretch bg-primary/50" />
+            <span
+              className="font-display text-primary tracking-[0.25em] text-xs sm:text-sm [writing-mode:vertical-rl] rotate-180 uppercase"
+            >
+              {event.edition}ème édition
+            </span>
+          </div>
+        </motion.div>
 
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -61,24 +111,24 @@ const HeroSection = () => {
         >
           {/* Date */}
           <div className="flex items-center gap-2">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="lucide lucide-calendar w-4 h-4 text-primary"><path d="M8 2v4"></path><path d="M16 2v4"></path><rect width="18" height="18" x="3" y="4" rx="2"></rect><path d="M3 10h18"></path></svg>
-            <span className="text-lg">20 Septembre 2026</span>
+            <Calendar className="w-4 h-4 text-primary" />
+            <span className="text-lg">{event.date}</span>
           </div>
 
           <span className="text-primary hidden sm:block">•</span>
 
           {/* Heure */}
           <div className="flex items-center gap-2">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="lucide lucide-clock w-4 h-4 text-primary"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
-            <span className="text-lg">10h00</span>
+            <Clock className="w-4 h-4 text-primary" />
+            <span className="text-lg">{event.startTime}</span>
           </div>
 
           <span className="text-primary hidden sm:block">•</span>
 
           {/* Lieu */}
           <div className="flex items-center gap-2">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="lucide lucide-map-pin w-4 h-4 text-primary"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path><circle cx="12" cy="10" r="3"></circle></svg>
-            <span className="text-lg">Entrange, Moselle</span>
+            <MapPin className="w-4 h-4 text-primary" />
+            <span className="text-lg">{event.location}</span>
           </div>
         </motion.div>
 

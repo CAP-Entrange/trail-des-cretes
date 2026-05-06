@@ -1,48 +1,5 @@
 import RaceCard from "./RaceCard";
-
-import grade12Logo from "@/assets/grade_12k.png";
-import grade21Logo from "@/assets/grade_21k.png";
-import grade31Logo from "@/assets/grade_31k.png";
-
-
-const races = [
-  {
-    distance: "12 km",
-    grade: grade12Logo,
-    title: "La Patrouille de Liaison",
-    subtitle: "L'agilité du guetteur",
-    elevation: "380m D+",
-    slogan: "Vigilance et rapidité.",
-    description:
-      "Un format nerveux qui simule les déplacements rapides des Coureurs de liaison entre les blocs de combat. Le tracé alterne relances sèches et sentiers sinueux en lisière de forêt. Idéal pour ceux qui veulent tester leur vitesse sur un terrain chargé d'histoire.",
-    funFact:
-      "Les soldats de la Ligne Maginot, surnommés les « Écrevisses du Rempart », vivaient à 30 mètres sous terre. Pour maintenir le lien avec la surface et les autres ouvrages, des patrouilles de liaison parcouraient quotidiennement ces chemins, peu importe la météo. Courir ce 12 km, c'est endosser le rôle de ces messagers de l'ombre qui assuraient la survie du secteur fortifié de Thionville.",
-  },
-  {
-    distance: "21 km",
-    grade: grade21Logo,
-    title: "La Traversée des Blocs",
-    subtitle: "L'endurance du béton",
-    elevation: "650m D+",
-    slogan: "Tenir bon, coûte que coûte.",
-    description:
-      "Une distance exigeante qui vous emmène sur les hauteurs stratégiques. Les montées sont abruptes, comme pour conquérir un observatoire d'artillerie. Le terrain est technique, mêlant racines et vestiges bétonnés, demandant une concentration constante et une force physique à toute épreuve.",
-    funFact:
-      "Le secteur d'Entrange abrite des réseaux de galeries impressionnants. Saviez-vous que pour construire ces géants de béton, il a fallu acheminer des milliers de tonnes de matériaux sur ces mêmes crêtes à l'aide de voies ferrées étroites (système Decauville) ? Les pentes que vous grimpez aujourd'hui étaient autrefois le théâtre d'un défi logistique colossal, où chaque mètre de dénivelé était une victoire sur la roche.",
-  },
-  {
-    distance: "31 km",
-    grade: grade31Logo,
-    title: "Le Mur des Crêtes",
-    subtitle: "L'ultime résistance",
-    elevation: "1050m D+",
-    slogan: "On ne passe pas !",
-    description:
-      "L'épreuve reine. Un parcours sauvage qui repousse les frontières de l'effort. Vous traverserez l'intégralité de la ligne de défense, là où la nature a repris ses droits sur les fortifications. Une immersion totale entre les blocs de l'Immerhof et les crêtes frontalières, une épopée où le mental prend le relais sur les jambes.",
-    funFact:
-      "« On ne passe pas ! » était la devise des troupes de forteresse. Les galeries de l'ouvrage d'Entrange étaient conçues pour être totalement autonomes pendant plusieurs semaines (usine électrique, hôpital, cuisines). En courant ce 31 km, vous traversez un « vaisseau de terre » immobile. On raconte que lors des nuits calmes, le vent dans les arbres des crêtes imite le murmure des ventilations de l'époque, rappelant que sous vos pieds, l'histoire respire encore.",
-  },
-];
+import { races, event } from "@/data/content";
 
 const RacesSection = () => {
   return (
@@ -52,11 +9,11 @@ const RacesSection = () => {
           🏃 Les Missions du Jour
         </h2>
         <p className="text-center text-muted-foreground mb-14 max-w-2xl mx-auto">
-          Trois distances, trois histoires. Choisissez votre mission sur les chemins de patrouille de la Ligne Maginot.
+          Une marche et trois courses. Choisissez votre mission sur les chemins de patrouille de la Ligne Maginot.
         </p>
-        <div className="grid md:grid-cols-3 gap-6">
+        <div className="grid sm:grid-cols-2 xl:grid-cols-4 gap-6">
           {races.map((race, i) => (
-            <RaceCard key={race.distance} {...race} index={i} />
+            <RaceCard key={race.title} {...race} registrationUrl={event.registrationUrl} index={i} />
           ))}
         </div>
       </div>

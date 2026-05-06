@@ -1,38 +1,5 @@
 import { motion } from "framer-motion";
-import { TreePine, Heart, Backpack, Users, UtensilsCrossed } from "lucide-react";
-
-const rules = [
-  {
-    icon: TreePine,
-    title: "Respect de la Zone",
-    subtitle: "Environnement",
-    text: "La forêt est notre couverture et notre patrimoine. Une Sentinelle ne laisse aucune trace de son passage. Gardez vos preuves (déchets) dans vos poches jusqu'au prochain poste. Honorons la nature qui protège nos vestiges.",
-  },
-  {
-    icon: Heart,
-    title: "Fraternité d'Armes",
-    subtitle: "Entraide",
-    text: "Une Sentinelle n'abandonne jamais un camarade blessé. Porter secours est une priorité absolue, le chrono est secondaire face à l'intégrité d'autrui.",
-  },
-  {
-    icon: Backpack,
-    title: "Le Paquetage de la Sentinelle",
-    subtitle: "Autonomie",
-    text: "Soyez maîtres de votre autonomie. Pour préserver nos crêtes, aucun gobelet jetable ne sera fourni. Munissez-vous de votre propre contenant (flasque ou gobelet réutilisable) pour faire le plein à la cantine. Un bon équipement est le premier pas vers la victoire.",
-  },
-  {
-    icon: Users,
-    title: "Courtoisie sur le Front",
-    subtitle: "Fair-play",
-    text: "Les boyaux et sentiers sont parfois étroits. Laissez passer les plus rapides avec le sourire. Le respect des bénévoles (nos commissaires de zone) est la base de notre unité.",
-  },
-  {
-    icon: UtensilsCrossed,
-    title: "Le Ravitaillement du Fort",
-    subtitle: "Ressources",
-    text: "Ne gaspillez pas les ressources. Servez-vous à la « cantine » avec mesure pour permettre à toutes les unités de tenir jusqu'à l'arrivée.",
-  },
-];
+import { rules } from "@/data/content";
 
 const RulesSection = () => {
   return (
