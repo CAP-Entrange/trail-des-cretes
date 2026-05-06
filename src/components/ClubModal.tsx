@@ -15,18 +15,24 @@ const ClubModal = ({ children }: ClubModalProps) => {
   return (
     <Dialog>
       <DialogTrigger asChild>{children}</DialogTrigger>
-      <DialogContent className="max-w-md">
+      <DialogContent className="max-w-2xl">
         <DialogHeader>
           <DialogTitle className="font-display text-2xl text-gradient-amber text-center">
-            {club.name}
+            <div className="flex flex-col items-center">
+              <img
+                src={club.logo}
+                alt={`Logo ${club.name}`}
+                className="w-32 h-32 object-contain"
+              />
+            </div>
           </DialogTitle>
         </DialogHeader>
         <div className="flex flex-col items-center gap-5 pt-2">
           <img
-            src={club.logo}
-            alt={`Logo ${club.name}`}
-            className="w-32 h-32 object-contain"
-          />
+                src={club.picture}
+                alt={`Logo ${club.name}`}
+                className="object-contain"
+              />
           <div className="space-y-3 text-sm sm:text-base text-foreground/80 leading-relaxed">
             <p>
               Le <span className="font-semibold text-primary">{club.name}</span> est

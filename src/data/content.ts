@@ -34,12 +34,14 @@ import concertauxLogo from "@/assets/sponsors/concertaux.png";
 import jsdCoiffureLogo from "@/assets/sponsors/jsd_coiffure.png";
 import saveurLogo from "@/assets/sponsors/saveur-et-gourmandise.png";
 import vitaLogo from "@/assets/sponsors/vita.png";
+import benevolePicture from "/benevoles.png";
 
 // ─── CLUB ─────────────────────────────────────
 
 export const club = {
   name: "CAP Entrange",
   logo: logoClub,
+  picture: benevolePicture,
   foundedYearsAgo: 11,
   description: "Club de course à pied basé à Entrange, qui court dans les environs : forêts, crêtes et chemins de trail des alentours de la frontière franco-luxembourgeoise.",
   sessions: [
@@ -49,7 +51,7 @@ export const club = {
   note: "Sorties principalement orientées trail — tous niveaux bienvenus !",
   socials: {
     facebook: "https://www.facebook.com/capentrange/",
-    instagram: "https://www.instagram.com/cap_entrange",
+    instagram: "https://www.instagram.com/trail_des_cretes/",
   },
 };
 
@@ -63,7 +65,7 @@ export const event = {
   tagline: "Là où le silence de l'acier rencontre l'effort.",
   date: "20 Septembre 2026",
   isoDate: "2026-09-20T10:00:00+02:00",
-  startTime: "10h00",
+  startTime: "9h30",
   location: "Entrange, Moselle",
   registrationUrl: "https://fr.milesrepublic.com/event/trail-des-cretes-dentrange-7158",
   contactEmail: "yves.moreau6@orange.fr",
@@ -79,7 +81,7 @@ export const races = [
     title: "La Ronde des Sentinelles",
     subtitle: "La mémoire sous les pieds",
     elevation: "380m D+",
-    startTime: "10h30",
+    startTime: "10h00",
     price: "5€",
     slogan: "Marche — accessible à tous.",
     description:
@@ -107,7 +109,7 @@ export const races = [
     title: "La Traversée des Blocs",
     subtitle: "L'endurance du béton",
     elevation: "650m D+",
-    startTime: "09h00",
+    startTime: "09h30",
     price: "18€",
     slogan: "Tenir bon, coûte que coûte.",
     description:
@@ -121,7 +123,7 @@ export const races = [
     title: "Le Mur des Crêtes",
     subtitle: "L'ultime résistance",
     elevation: "1050m D+",
-    startTime: "08h00",
+    startTime: "09h30",
     price: "20€",
     slogan: "On ne passe pas !",
     description:
