@@ -8,9 +8,6 @@
 import { TreePine, Heart, Backpack, Users, UtensilsCrossed, Car, Shirt, Sandwich, GlassWater, Flame, Star, Info } from "lucide-react";
 
 import logoClub from "@/assets/logo-club.png";
-import grade12Logo from "@/assets/grade_12k.png";
-import grade21Logo from "@/assets/grade_21k.png";
-import grade31Logo from "@/assets/grade_31k.png";
 
 import ccceLogo from "@/assets/sponsors/ccce.png";
 import entrangeLogo from "@/assets/sponsors/entrange.jpg";
@@ -76,7 +73,7 @@ export const event = {
 export const races = [
   {
     distance: "12 km",
-    grade: null,
+    color: null,
     ribbon: "Marche",
     title: "La Ronde des Sentinelles",
     subtitle: "La mémoire sous les pieds",
@@ -91,7 +88,7 @@ export const races = [
   },
   {
     distance: "12 km",
-    grade: grade12Logo,
+    color: "#10B981",
     title: "La Patrouille de Liaison",
     subtitle: "L'agilité du guetteur",
     elevation: "380m D+",
@@ -105,7 +102,7 @@ export const races = [
   },
   {
     distance: "22 km",
-    grade: grade21Logo,
+    color: "#0c9cf5",
     title: "La Traversée des Blocs",
     subtitle: "L'endurance du béton",
     elevation: "650m D+",
@@ -119,7 +116,7 @@ export const races = [
   },
   {
     distance: "32 km",
-    grade: grade31Logo,
+    color: "#f64309",
     title: "Le Mur des Crêtes",
     subtitle: "L'ultime résistance",
     elevation: "1050m D+",
