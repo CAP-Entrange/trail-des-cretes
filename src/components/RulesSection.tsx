@@ -1,18 +1,19 @@
 import { motion } from "framer-motion";
-import { rules } from "@/data/content";
+import { rules, sections } from "@/data/content";
 
 const RulesSection = () => {
+  const s = sections.rules;
   return (
     <section className="py-20 sm:py-28 px-4 bg-muted/30">
       <div className="max-w-4xl mx-auto">
         <h2 className="font-display text-4xl sm:text-6xl text-center text-gradient-amber mb-2">
-          📜 La Charte de la Sentinelle
+          {s.title}
         </h2>
         <p className="text-center text-muted-foreground mb-4">
-          Règlement officiel des Crêtes d'Entrange
+          {s.subtitle}
         </p>
         <p className="text-center text-sm text-foreground/60 italic mb-14 max-w-xl mx-auto">
-          Tout engagé s'engage à respecter le code d'honneur du régiment de marche des Crêtes.
+          {s.description}
         </p>
 
         <div className="space-y-6">

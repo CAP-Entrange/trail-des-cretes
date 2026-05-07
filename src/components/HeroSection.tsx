@@ -151,7 +151,7 @@ const HeroSection = () => {
             href="#courses"
             className="inline-block bg-primary text-primary-foreground font-display text-xl px-8 py-4 tracking-wider hover:brightness-110 transition-all"
           >
-            Découvrir les missions
+            Découvrir les parcours
           </a>
           <a
             href="#inscription"

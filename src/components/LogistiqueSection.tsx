@@ -1,18 +1,19 @@
 import { motion } from "framer-motion";
-import { logistique, restauration } from "@/data/content";
+import { logistique, restauration, sections } from "@/data/content";
 
 const LogistiqueSection = () => {
   const { pack, consigne, menu } = restauration;
+  const s = sections.logistique;
 
   return (
     <section className="py-20 sm:py-28 px-4">
       <div className="max-w-4xl mx-auto">
         {/* Section header */}
         <h2 className="font-display text-4xl sm:text-6xl text-center text-gradient-amber mb-2">
-          Sur Place
+          {s.title}
         </h2>
         <p className="text-center text-muted-foreground mb-14">
-          Tout le confort pour bien vivre votre journée
+          {s.subtitle}
         </p>
 
         {/* Logistics cards */}
@@ -47,8 +48,8 @@ const LogistiqueSection = () => {
         >
           {/* Header */}
           <div className="px-6 pt-6 pb-4 border-b border-border">
-            <h3 className="font-display text-3xl text-foreground">Restauration sur place</h3>
-            <p className="text-muted-foreground text-sm mt-1">Buvette & petite restauration ouverte toute la journée</p>
+            <h3 className="font-display text-3xl text-foreground">{s.restaurationTitle}</h3>
+            <p className="text-muted-foreground text-sm mt-1">{s.restaurationSubtitle}</p>
           </div>
 
           {/* Pack highlight */}
@@ -73,7 +74,7 @@ const LogistiqueSection = () => {
 
           {/* Menu items */}
           <div className="px-6 pt-5 pb-2">
-            <p className="text-xs uppercase tracking-widest text-muted-foreground mb-4 font-display">Au menu</p>
+            <p className="text-xs uppercase tracking-widest text-muted-foreground mb-4 font-display">{s.menuLabel}</p>
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
               {menu.map((item, i) => (
                 <motion.div

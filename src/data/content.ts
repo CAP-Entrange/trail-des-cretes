@@ -8,9 +8,6 @@
 import { TreePine, Heart, Backpack, Users, UtensilsCrossed, Car, Shirt, Sandwich, GlassWater, Flame, Star, Info } from "lucide-react";
 
 import logoClub from "@/assets/logo-club.png";
-import grade12Logo from "@/assets/grade_12k.png";
-import grade21Logo from "@/assets/grade_21k.png";
-import grade31Logo from "@/assets/grade_31k.png";
 
 import ccceLogo from "@/assets/sponsors/ccce.png";
 import entrangeLogo from "@/assets/sponsors/entrange.jpg";
@@ -62,7 +59,7 @@ export const event = {
   organizer: "CAP Entrange",
   edition: 9,
   lastYearParticipants: 438,
-  tagline: "Là où le silence de l'acier rencontre l'effort.",
+  tagline: "L'acier pour mémoire, la forêt pour terrain de jeu.",
   date: "20 Septembre 2026",
   isoDate: "2026-09-20T10:00:00+02:00",
   startTime: "9h30",
@@ -76,60 +73,60 @@ export const event = {
 export const races = [
   {
     distance: "12 km",
-    grade: null,
+    color: null,
     ribbon: "Marche",
-    title: "La Ronde des Sentinelles",
-    subtitle: "La mémoire sous les pieds",
+    title: "La Balade des Crêtes",
+    subtitle: "Nature & découverte",
     elevation: "380m D+",
     startTime: "10h00",
     price: "5€",
     slogan: "Marche — accessible à tous.",
     description:
-      "Une randonnée guidée de 12 km sur les mêmes crêtes que les coureurs, sans la montre, sans le chrono. Familles, curieux et amoureux d'histoire sont les bienvenus. Chaque virage dévoile un vestige, chaque crête raconte un fragment de 1939. Ici, c'est le chemin qui compte.",
+      "Une randonnée de 12 km ouverte à tous, en plein cœur des crêtes d'Entrange. Familles, curieux et amoureux de nature découvriront des paysages forestiers préservés et passeront à proximité de plusieurs ouvrages de la Ligne Maginot, discrets témoins d'une histoire enfouie dans la végétation. Ici, le rythme est libre — c'est le chemin qui compte.",
     funFact:
-      "Lors de la drôle de guerre (1939–1940), des milliers de civils de la région furent évacués en 48h à peine. Beaucoup ne prirent que ce qu'ils pouvaient porter. Certains de ces chemins de crêtes étaient leurs seules routes de fuite. En marchant aujourd'hui, vous posez vos pas là où l'exode silencieux d'un peuple s'est joué.",
+      "Les crêtes d'Entrange abritent une faune discrète mais variée : chevreuils, rapaces et parfois sangliers croisent les sentiers. Les ouvrages de la Ligne Maginot, aujourd'hui recouverts de mousse et de lierre, sont devenus des refuges naturels pour les chauves-souris et certains insectes rares. La nature a repris ses droits sur le béton, transformant l'histoire en écrin de biodiversité.",
   },
   {
     distance: "12 km",
-    grade: grade12Logo,
-    title: "La Patrouille de Liaison",
-    subtitle: "L'agilité du guetteur",
+    color: "#10B981",
+    title: "Le Sentier des Crêtes",
+    subtitle: "Vif et technique",
     elevation: "380m D+",
     startTime: "10h00",
     price: "15€",
-    slogan: "Vigilance et rapidité.",
+    slogan: "Vivacité et découverte.",
     description:
-      "Un format nerveux qui simule les déplacements rapides des Coureurs de liaison entre les blocs de combat. Le tracé alterne relances sèches et sentiers sinueux en lisière de forêt. Idéal pour ceux qui veulent tester leur vitesse sur un terrain chargé d'histoire.",
+      "Un trail nerveux qui enchaîne relances sèches et sentiers sinueux en lisière de forêt. Le tracé offre de belles vues sur les collines frontalières franco-luxembourgeoises et longe quelques ouvrages de la Ligne Maginot, discrets sous leur manteau de végétation. Idéal pour découvrir le relief de la région à bonne allure.",
     funFact:
-      "Les soldats de la Ligne Maginot, surnommés les « Écrevisses du Rempart », vivaient à 30 mètres sous terre. Pour maintenir le lien avec la surface et les autres ouvrages, des patrouilles de liaison parcouraient quotidiennement ces chemins, peu importe la météo. Courir ce 12 km, c'est endosser le rôle de ces messagers de l'ombre qui assuraient la survie du secteur fortifié de Thionville.",
+      "Le secteur d'Entrange se trouve à la jonction de plusieurs écosystèmes forestiers, ce qui en fait un territoire naturellement riche. Les sentiers de crêtes que vous arpentez étaient, il y a moins d'un siècle, des chemins de surveillance militaire. Aujourd'hui, ils sont fréquentés par les coureurs, les randonneurs — et quelques renards très peu farouches.",
   },
   {
     distance: "22 km",
-    grade: grade21Logo,
-    title: "La Traversée des Blocs",
-    subtitle: "L'endurance du béton",
+    color: "#0c9cf5",
+    title: "La Traversée des Forêts",
+    subtitle: "Au cœur des hauteurs mosellanes",
     elevation: "650m D+",
     startTime: "09h30",
     price: "18€",
-    slogan: "Tenir bon, coûte que coûte.",
+    slogan: "Ténacité et naturel.",
     description:
-      "Une distance exigeante qui vous emmène sur les hauteurs stratégiques. Les montées sont abruptes, comme pour conquérir un observatoire d'artillerie. Le terrain est technique, mêlant racines et vestiges bétonnés, demandant une concentration constante et une force physique à toute épreuve.",
+      "Une distance exigeante qui s'enfonce dans les zones boisées les plus préservées du secteur. Le tracé passe par des clairières ouvertes exceptionnellement pour la course et longe plusieurs ouvrages de la Ligne Maginot aujourd'hui recouverts de mousse et de lierre. Terrain technique, nature généreuse — chaque montée se mérite.",
     funFact:
-      "Le secteur d'Entrange abrite des réseaux de galeries impressionnants. Saviez-vous que pour construire ces géants de béton, il a fallu acheminer des milliers de tonnes de matériaux sur ces mêmes crêtes à l'aide de voies ferrées étroites (système Decauville) ? Les pentes que vous grimpez aujourd'hui étaient autrefois le théâtre d'un défi logistique colossal, où chaque mètre de dénivelé était une victoire sur la roche.",
+      "Pour ériger ces forteresses, les crêtes furent autrefois sillonnées par des voies ferrées étroites (système Decauville), acheminant des milliers de tonnes de matériaux au cœur de la forêt. Paradoxalement, l'ampleur de ces chantiers militaires a sanctuarisé le massif : protégées par le secret de la défense, ces zones n'ont jamais connu l'urbanisation. Les pentes abruptes que vous défiez aujourd'hui sont le témoin intact de ce passé colossal, où la nature a fini par recouvrir l'acier.",
   },
   {
     distance: "32 km",
-    grade: grade31Logo,
-    title: "Le Mur des Crêtes",
-    subtitle: "L'ultime résistance",
+    color: "#f64309",
+    title: "L'Épopée des Crêtes",
+    subtitle: "Le grand tour sauvage",
     elevation: "1050m D+",
     startTime: "09h30",
     price: "20€",
-    slogan: "On ne passe pas !",
+    slogan: "Liberté et dépassement.",
     description:
-      "L'épreuve reine. Un parcours sauvage qui repousse les frontières de l'effort. Vous traverserez l'intégralité de la ligne de défense, là où la nature a repris ses droits sur les fortifications. Une immersion totale entre les blocs de l'Immerhof et les crêtes frontalières, une épopée où le mental prend le relais sur les jambes.",
+      "L'épreuve reine. Un parcours qui traverse l'intégralité des crêtes d'Entrange, des forêts les plus denses aux panoramas frontaliers. Certaines sections traversent des zones naturelles protégées, ouvertes spécialement pour la course. Entre les ouvrages de l'Immerhof et les crêtes boisées, la nature offre un décor rare où chaque kilomètre se mérite.",
     funFact:
-      "« On ne passe pas ! » était la devise des troupes de forteresse. Les galeries de l'ouvrage d'Entrange étaient conçues pour être totalement autonomes pendant plusieurs semaines (usine électrique, hôpital, cuisines). En courant ce 31 km, vous traversez un « vaisseau de terre » immobile. On raconte que lors des nuits calmes, le vent dans les arbres des crêtes imite le murmure des ventilations de l'époque, rappelant que sous vos pieds, l'histoire respire encore.",
+      "Sous vos foulées, les galeries de l'ouvrage d'Entrange s'étirent sur des centaines de mètres. Véritable cité enfouie, ce géant de béton était conçu pour une autonomie totale : usine électrique, infirmerie et réserves vitales vibraient autrefois sous la roche. Aujourd'hui classées, ces structures semblent ne faire qu'un avec le massif. On raconte que lors des nuits calmes, le vent s’engouffrant dans les arbres imite le murmure des anciennes ventilations — comme si la forêt respirait encore au rythme de l'histoire.",
   },
 ];
 
@@ -138,35 +135,86 @@ export const races = [
 export const rules = [
   {
     icon: TreePine,
-    title: "Respect de la Zone",
+    title: "Respect de la Nature",
     subtitle: "Environnement",
-    text: "La forêt est notre couverture et notre patrimoine. Une Sentinelle ne laisse aucune trace de son passage. Gardez vos preuves (déchets) dans vos poches jusqu'au prochain poste. Honorons la nature qui protège nos vestiges.",
+    text: "Forêts et crêtes sont notre terrain de jeu et notre patrimoine commun. Ne laissez aucun déchet sur le parcours — chaque emballage repart avec vous jusqu'au prochain ravitaillement. Certaines zones traversées sont protégées : préservons-les ensemble.",
   },
   {
     icon: Heart,
-    title: "Fraternité d'Armes",
-    subtitle: "Entraide",
-    text: "Une Sentinelle n'abandonne jamais un camarade blessé. Porter secours est une priorité absolue, le chrono est secondaire face à l'intégrité d'autrui.",
+    title: "Entraide sur le Parcours",
+    subtitle: "Solidarité",
+    text: "Porter secours à un coureur en difficulté est une priorité absolue. Le chrono est secondaire face à la sécurité de tous. Ne laissez jamais quelqu'un derrière vous si vous pouvez lui venir en aide.",
   },
   {
     icon: Backpack,
-    title: "Le Paquetage de la Sentinelle",
+    title: "Autonomie & Équipement",
     subtitle: "Autonomie",
-    text: "Soyez maîtres de votre autonomie. Pour préserver nos crêtes, aucun gobelet jetable ne sera fourni. Munissez-vous de votre propre contenant (flasque ou gobelet réutilisable) pour faire le plein à la cantine. Un bon équipement est le premier pas vers la victoire.",
+    text: "Soyez maîtres de votre autonomie. Aucun gobelet jetable ne sera fourni — munissez-vous de votre propre flasque ou gobelet réutilisable. Un bon équipement, c'est aussi respecter les zones naturelles que vous traversez.",
   },
   {
     icon: Users,
-    title: "Courtoisie sur le Front",
+    title: "Courtoisie sur les Sentiers",
     subtitle: "Fair-play",
-    text: "Les boyaux et sentiers sont parfois étroits. Laissez passer les plus rapides avec le sourire. Le respect des bénévoles (nos commissaires de zone) est la base de notre unité.",
+    text: "Les sentiers sont parfois étroits. Laissez passer les plus rapides avec le sourire et respectez nos bénévoles, qui rendent la course possible. La bienveillance est le premier règlement du trail.",
   },
   {
     icon: UtensilsCrossed,
-    title: "Le Ravitaillement du Fort",
+    title: "Ravitaillement",
     subtitle: "Ressources",
-    text: "Ne gaspillez pas les ressources. Servez-vous à la « cantine » avec mesure pour permettre à toutes les unités de tenir jusqu'à l'arrivée.",
+    text: "Servez-vous aux ravitaillements avec mesure pour que chaque coureur puisse en profiter jusqu'à l'arrivée. Ne gaspillez pas les ressources communes.",
   },
 ];
+
+// ─── TITRES DE SECTIONS ───────────────────────
+
+export const sections = {
+  about: {
+    title: "Présentation",
+  },
+  races: {
+    title: "Les Parcours",
+    subtitle: "Une marche et trois courses sur les crêtes et forêts d'Entrange.",
+  },
+  rules: {
+    title: "Le Règlement",
+    subtitle: "Règlement officiel des Crêtes d'Entrange",
+    description: "Chaque participant s'engage à respecter ces quelques règles simples, pour la sécurité de tous et le respect des zones naturelles traversées.",
+  },
+  logistique: {
+    title: "Sur Place",
+    subtitle: "Tout le confort pour bien vivre votre journée",
+    restaurationTitle: "Restauration sur place",
+    restaurationSubtitle: "Buvette & petite restauration ouverte toute la journée",
+    menuLabel: "Au menu",
+  },
+  sponsors: {
+    title: "Nos Partenaires",
+    subtitle: "Ils soutiennent l'aventure des Crêtes d'Entrange",
+    partnershipLabel: "Intéressé par un partenariat ?",
+    partnershipCta: "Contactez-nous",
+  },
+};
+
+// ─── PRÉSENTATION ─────────────────────────────
+
+export const about = {
+  paragraph1After:
+    " vous invite à courir au cœur d'un territoire naturel d'exception. Le Trail des Crêtes d'Entrange serpente à travers les forêts mosellanes, longe des clairières préservées et franchit les crêtes panoramiques qui dominent la frontière franco-luxembourgeoise.",
+  paragraphs: [
+    "Le tracé traverse des zones naturelles remarquables, parfois protégées et ouvertes exceptionnellement pour la course. Vous passerez à proximité de plusieurs ouvrages de la Ligne Maginot, témoins silencieux réappropriés par la végétation — une histoire qui affleure sans jamais dominer.",
+    "Que vous soyez traileur confirmé ou randonneur curieux, les crêtes d'Entrange vous offrent une expérience rare : celle d'un territoire sauvage, à la fois dépaysant et chargé d'une mémoire discrète.",
+  ],
+  closing:
+    "Des kilomètres de nature préservée, une journée sportive et humaine inoubliable.",
+};
+
+// ─── INSCRIPTION (CTA) ────────────────────────
+
+export const cta = {
+  heading: "Prêt à courir les crêtes ?",
+  subtext:
+    "Chaussez vos trails et venez explorer les sentiers sauvages d'Entrange. La nature et l'histoire vous attendent.",
+};
 
 // ─── LOGISTIQUE & RESTAURATION ────────────────
 

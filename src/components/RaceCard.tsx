@@ -1,10 +1,11 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
 import { ChevronDown, Clock, Tag } from "lucide-react";
+import MountainBadge from "./MountainBadge";
 
 interface RaceCardProps {
   distance: string;
-  grade: string | null;
+  color: string | null;
   ribbon?: string;
   title: string;
   subtitle: string;
@@ -20,7 +21,7 @@ interface RaceCardProps {
 
 const RaceCard = ({
   distance,
-  grade,
+  color,
   ribbon,
   title,
   subtitle,
@@ -44,7 +45,10 @@ const RaceCard = ({
       className="relative overflow-hidden bg-card border border-border hover:border-glow transition-colors duration-300 flex flex-col"
     >
       {ribbon && (
-        <div className="absolute top-5 -right-8 w-36 bg-primary text-black text-[18px] font-display tracking-widest uppercase text-center py-0.5 rotate-45 shadow-md pointer-events-none">
+        <div
+          className="absolute top-5 -right-8 w-36 text-black text-[18px] font-display tracking-widest uppercase text-center py-0.5 rotate-45 shadow-md pointer-events-none"
+          style={{ backgroundColor: "#f9dc07" }}
+        >
           {ribbon}
         </div>
       )}
@@ -67,14 +71,10 @@ const RaceCard = ({
           </div>
         </div>
 
-        {/* Affichage du Grade à droite */}
-        { grade && (
-          <div className="h-20 w-20 sm:h-26 sm:w-26 flex items-center justify-center">
-            <img 
-              src={ grade} 
-              alt="Difficulté" 
-              className="h-full object-contain"
-            />
+        {/* Badge montagne coloré */}
+        {color && (
+          <div className="flex items-center justify-center">
+            <MountainBadge color={color} size={60} />
           </div>
         )}
       </div>
