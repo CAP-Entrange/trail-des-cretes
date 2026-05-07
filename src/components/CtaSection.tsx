@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { event } from "@/data/content";
+import { event, cta } from "@/data/content";
 
 const CtaSection = () => {
   return (
@@ -11,10 +11,10 @@ const CtaSection = () => {
           viewport={{ once: true }}
           className="font-display text-4xl sm:text-6xl text-gradient-amber mb-4"
         >
-          Rejoignez les Sentinelles
+          {cta.heading}
         </motion.h2>
         <p className="text-muted-foreground mb-4 max-w-xl mx-auto">
-          Enfilez vos chaussures de trail et venez arpenter les chemins de patrouille. L'histoire vous attend sur les crêtes.
+          {cta.subtext}
         </p>
         <p className="text-muted-foreground/60 text-sm mb-10">
           Déjà <span className="text-primary font-semibold">{event.lastYearParticipants} coureurs</span> l'année dernière — et vous ?
