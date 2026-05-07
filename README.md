@@ -80,6 +80,6 @@ git tag v1.0.0
 git push origin v1.0.0
 ```
 
-URL de production : `https://cap-entrage.github.io/` et `https://trail-des-cretes.fr`
+URL de production : `https://cap-entrange.github.io/trail-des-cretes/` et `https://trail-des-cretes.fr`
 
-> La base URL `/` est configurée dans `vite.config.ts`.
+> La base URL `/trail-des-cretes/` est configurée dans `vite.config.ts`.
