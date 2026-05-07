@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
+import { event } from "@/data/content";
 
-const EVENT_DATE = new Date("2026-09-20T10:00:00+02:00");
+const EVENT_DATE = new Date(event.isoDate);
 
 const Countdown = () => {
   const [timeLeft, setTimeLeft] = useState(getTimeLeft());

@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { event, cta } from "@/data/content";
 
 const CtaSection = () => {
   return (
@@ -10,15 +11,18 @@ const CtaSection = () => {
           viewport={{ once: true }}
           className="font-display text-4xl sm:text-6xl text-gradient-amber mb-4"
         >
-          Rejoignez les Sentinelles
+          {cta.heading}
         </motion.h2>
-        <p className="text-muted-foreground mb-10 max-w-xl mx-auto">
-          Enfilez vos chaussures de trail et venez arpenter les chemins de patrouille. L'histoire vous attend sur les crêtes.
+        <p className="text-muted-foreground mb-4 max-w-xl mx-auto">
+          {cta.subtext}
+        </p>
+        <p className="text-muted-foreground/60 text-sm mb-10">
+          Déjà <span className="text-primary font-semibold">{event.lastYearParticipants} coureurs</span> l'année dernière — et vous ?
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <a
-            href="https://fr.milesrepublic.com/event/trail-des-cretes-dentrange-7158"
+            href={event.registrationUrl}
             target="_blank"
             className="inline-block bg-primary text-primary-foreground font-display text-2xl px-10 py-5 tracking-wider hover:brightness-110 transition-all"
           >
