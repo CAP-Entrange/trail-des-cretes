@@ -124,7 +124,7 @@ export const races = [
     price: "20€",
     slogan: "Liberté et dépassement.",
     description:
-      "L'épreuve reine. Un grand tour qui s'étend sur les communes de Kanfen, Volmerange-lès-Boulay, Escherange, Angevillers et Oeutrange — bien au-delà des seules crêtes d'Entrange. Certaines sections traversent des zones naturelles protégées, ouvertes spécialement pour la course. Au fil des forêts et des panoramas frontaliers, la nature offre un décor rare où chaque kilomètre se mérite.",
+      "L'épreuve reine. Un grand tour qui s'étend sur les communes de Kanfen, Volmerange-les-Mines, Escherange, Angevillers et Oeutrange — bien au-delà des seules crêtes d'Entrange. Certaines sections traversent des zones naturelles protégées, ouvertes spécialement pour la course. Au fil des forêts et des panoramas frontaliers, la nature offre un décor rare où chaque kilomètre se mérite.",
     funFact:
       "Sous vos foulées, les galeries de l'ouvrage d'Entrange s'étirent sur des centaines de mètres. Véritable cité enfouie, ce géant de béton était conçu pour une autonomie totale : usine électrique, infirmerie et réserves vitales vibraient autrefois sous la roche. Aujourd'hui classées, ces structures semblent ne faire qu'un avec le massif. On raconte que lors des nuits calmes, le vent s’engouffrant dans les arbres imite le murmure des anciennes ventilations — comme si la forêt respirait encore au rythme de l'histoire.",
   },
@@ -269,7 +269,7 @@ export const sponsors = [
   { name: "Romeo couverture",    imgPath: romeoLogo,           url: "https://romeo-couverture.fr/",                                                                                 bg: "#FFFFFF" },
   { name: "Chez Barb",           imgPath: chezBarbLogo,        url: "https://www.facebook.com/p/Chez-Barb-100067337318273/",                                                        bg: "#FFFFFF" },
   { name: "Inflorescence57",     imgPath: InflorescenceLogo,   url: "https://www.facebook.com/inflorescence57/?locale=fr_FR",                                                       bg: "#FFFFFF" },
-  { name: "Seb-Moto Yutz",       imgPath: sebMotoLogo,         url: "https://www.seb-moto.fr/",                                                                                     bg: "#c82a22" },
+  // { name: "Seb-Moto Yutz",       imgPath: sebMotoLogo,         url: "https://www.seb-moto.fr/",                                                                                     bg: "#c82a22" },
   { name: "La Table Orientale",  imgPath: tableOrientaleLogo,  url: "http://latableorientale.com/nous-contacter.html",                                                              bg: "#FFFFFF" },
   { name: "Valerie Chalicarne",  imgPath: vChalicarneLogo,     url: "https://www.gallys-immo.fr/conseiller/valerie.chalicarne,187",                                                 bg: "#FFFFFF" },
   { name: "Sandrine Coiff",      imgPath: scoiffLogo,          url: "https://www.sandrinecoiff.fr",                                                                                 bg: "#FFFFFF" },
