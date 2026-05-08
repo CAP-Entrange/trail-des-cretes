@@ -82,7 +82,7 @@ export const races = [
     price: "5€",
     slogan: "Marche — accessible à tous.",
     description:
-      "Une randonnée de 12 km ouverte à tous, en plein cœur des crêtes d'Entrange. Familles, curieux et amoureux de nature découvriront des paysages forestiers préservés et passeront à proximité de plusieurs ouvrages de la Ligne Maginot, discrets témoins d'une histoire enfouie dans la végétation. Ici, le rythme est libre — c'est le chemin qui compte.",
+      "Une randonnée de 12 km ouverte à tous, sur le même tracé que le trail 12 km. À travers les forêts et crêtes du plateau qui borde la frontière franco-luxembourgeoise, familles et curieux découvrent à leur rythme des paysages préservés et plusieurs ouvrages de la Ligne Maginot, discrets témoins d'une histoire enfouie dans la végétation. Ici, c'est le chemin qui compte.",
     funFact:
       "Les crêtes d'Entrange abritent une faune discrète mais variée : chevreuils, rapaces et parfois sangliers croisent les sentiers. Les ouvrages de la Ligne Maginot, aujourd'hui recouverts de mousse et de lierre, sont devenus des refuges naturels pour les chauves-souris et certains insectes rares. La nature a repris ses droits sur le béton, transformant l'histoire en écrin de biodiversité.",
   },
@@ -96,7 +96,7 @@ export const races = [
     price: "15€",
     slogan: "Vivacité et découverte.",
     description:
-      "Un trail nerveux qui enchaîne relances sèches et sentiers sinueux en lisière de forêt. Le tracé offre de belles vues sur les collines frontalières franco-luxembourgeoises et longe quelques ouvrages de la Ligne Maginot, discrets sous leur manteau de végétation. Idéal pour découvrir le relief de la région à bonne allure.",
+      "Le même parcours de 12 km que la marche, couru en trail sur les forêts et crêtes du plateau frontalier. Les sentiers se révèlent autrement à bonne allure : montées franches, appuis techniques, et de belles vues sur la frontière franco-luxembourgeoise. Le tracé longe aussi quelques ouvrages de la Ligne Maginot. Idéal pour découvrir le relief du secteur sans se lancer sur les longues distances.",
     funFact:
       "Le secteur d'Entrange se trouve à la jonction de plusieurs écosystèmes forestiers, ce qui en fait un territoire naturellement riche. Les sentiers de crêtes que vous arpentez étaient, il y a moins d'un siècle, des chemins de surveillance militaire. Aujourd'hui, ils sont fréquentés par les coureurs, les randonneurs — et quelques renards très peu farouches.",
   },
@@ -110,7 +110,7 @@ export const races = [
     price: "18€",
     slogan: "Ténacité et naturel.",
     description:
-      "Une distance exigeante qui s'enfonce dans les zones boisées les plus préservées du secteur. Le tracé passe par des clairières ouvertes exceptionnellement pour la course et longe plusieurs ouvrages de la Ligne Maginot aujourd'hui recouverts de mousse et de lierre. Terrain technique, nature généreuse — chaque montée se mérite.",
+      "Une distance exigeante qui s'enfonce dans les zones boisées les plus préservées du plateau, reliant plusieurs communes du secteur au fil des crêtes. Le tracé passe par des clairières ouvertes exceptionnellement pour la course et longe plusieurs ouvrages de la Ligne Maginot aujourd'hui recouverts de mousse et de lierre. Terrain technique, nature généreuse — chaque montée se mérite.",
     funFact:
       "Pour ériger ces forteresses, les crêtes furent autrefois sillonnées par des voies ferrées étroites (système Decauville), acheminant des milliers de tonnes de matériaux au cœur de la forêt. Paradoxalement, l'ampleur de ces chantiers militaires a sanctuarisé le massif : protégées par le secret de la défense, ces zones n'ont jamais connu l'urbanisation. Les pentes abruptes que vous défiez aujourd'hui sont le témoin intact de ce passé colossal, où la nature a fini par recouvrir l'acier.",
   },
@@ -124,7 +124,7 @@ export const races = [
     price: "20€",
     slogan: "Liberté et dépassement.",
     description:
-      "L'épreuve reine. Un parcours qui traverse l'intégralité des crêtes d'Entrange, des forêts les plus denses aux panoramas frontaliers. Certaines sections traversent des zones naturelles protégées, ouvertes spécialement pour la course. Entre les ouvrages de l'Immerhof et les crêtes boisées, la nature offre un décor rare où chaque kilomètre se mérite.",
+      "L'épreuve reine. Un grand tour qui s'étend sur les communes de Kanfen, Volmerange-les-Mines, Escherange, Angevillers et Oeutrange — bien au-delà des seules crêtes d'Entrange. Certaines sections traversent des zones naturelles protégées, ouvertes spécialement pour la course. Au fil des forêts et des panoramas frontaliers, la nature offre un décor rare où chaque kilomètre se mérite.",
     funFact:
       "Sous vos foulées, les galeries de l'ouvrage d'Entrange s'étirent sur des centaines de mètres. Véritable cité enfouie, ce géant de béton était conçu pour une autonomie totale : usine électrique, infirmerie et réserves vitales vibraient autrefois sous la roche. Aujourd'hui classées, ces structures semblent ne faire qu'un avec le massif. On raconte que lors des nuits calmes, le vent s’engouffrant dans les arbres imite le murmure des anciennes ventilations — comme si la forêt respirait encore au rythme de l'histoire.",
   },
@@ -269,7 +269,7 @@ export const sponsors = [
   { name: "Romeo couverture",    imgPath: romeoLogo,           url: "https://romeo-couverture.fr/",                                                                                 bg: "#FFFFFF" },
   { name: "Chez Barb",           imgPath: chezBarbLogo,        url: "https://www.facebook.com/p/Chez-Barb-100067337318273/",                                                        bg: "#FFFFFF" },
   { name: "Inflorescence57",     imgPath: InflorescenceLogo,   url: "https://www.facebook.com/inflorescence57/?locale=fr_FR",                                                       bg: "#FFFFFF" },
-  { name: "Seb-Moto Yutz",       imgPath: sebMotoLogo,         url: "https://www.seb-moto.fr/",                                                                                     bg: "#c82a22" },
+  // { name: "Seb-Moto Yutz",       imgPath: sebMotoLogo,         url: "https://www.seb-moto.fr/",                                                                                     bg: "#c82a22" },
   { name: "La Table Orientale",  imgPath: tableOrientaleLogo,  url: "http://latableorientale.com/nous-contacter.html",                                                              bg: "#FFFFFF" },
   { name: "Valerie Chalicarne",  imgPath: vChalicarneLogo,     url: "https://www.gallys-immo.fr/conseiller/valerie.chalicarne,187",                                                 bg: "#FFFFFF" },
   { name: "Sandrine Coiff",      imgPath: scoiffLogo,          url: "https://www.sandrinecoiff.fr",                                                                                 bg: "#FFFFFF" },
