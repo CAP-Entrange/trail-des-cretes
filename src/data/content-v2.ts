@@ -18,7 +18,7 @@ export const eventV2 = {
 export const racesV2 = [
   {
     distance: "12 km",
-    color: "#10B981",
+    color: "hsl(93, 72%, 44%)",
     title: "Le Sentier des Crêtes",
     subtitle: "Vif, technique & nocturne",
     elevation: "380m D+",
@@ -32,7 +32,7 @@ export const racesV2 = [
   },
   {
     distance: "22 km",
-    color: "#0ea5e9",
+    color: "#0c9cf5",
     title: "La Traversée des Forêts",
     subtitle: "Profondeur & obscurité",
     elevation: "650m D+",

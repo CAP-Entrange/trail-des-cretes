@@ -46,19 +46,14 @@ const RaceCardV2 = ({
       }}
     >
       {/* Colored top bar */}
-      <div style={{ height: "3px", background: `linear-gradient(90deg, ${color}, ${color}60)` }} />
+      <div style={{ height: "3px", backgroundColor: color }} />
 
       {/* Header */}
       <div className="p-6 sm:p-8 flex justify-between items-center" style={{ borderBottom: "1px solid rgba(255,255,255,0.05)" }}>
         <div>
           <span
             className="font-display text-5xl sm:text-6xl leading-none"
-            style={{
-              background: `linear-gradient(135deg, ${color}, ${color}90)`,
-              WebkitBackgroundClip: "text",
-              WebkitTextFillColor: "transparent",
-              backgroundClip: "text",
-            }}
+            style={{ color }}
           >
             {distance}
           </span>
@@ -123,7 +118,7 @@ const RaceCardV2 = ({
           target="_blank"
           rel="noopener noreferrer"
           className="block text-center font-display text-lg px-6 py-3 tracking-wider transition-all hover:brightness-110"
-          style={{ background: `linear-gradient(135deg, ${color}, ${color}c0)`, color: "white" }}
+          style={{ backgroundColor: color, color: "white" }}
         >
           S'engager — {distance}
         </a>

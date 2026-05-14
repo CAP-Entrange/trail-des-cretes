@@ -1,14 +1,19 @@
 User-agent: Googlebot
 Allow: /
+Disallow: /trail-des-cretes/v2
 
 User-agent: Bingbot
 Allow: /
+Disallow: /trail-des-cretes/v2
 
 User-agent: Twitterbot
 Allow: /
+Disallow: /trail-des-cretes/v2
 
 User-agent: facebookexternalhit
 Allow: /
+Disallow: /trail-des-cretes/v2
 
 User-agent: *
 Allow: /
+Disallow: /trail-des-cretes/v2

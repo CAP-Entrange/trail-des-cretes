@@ -5,7 +5,7 @@ import { g, gradientText } from "./theme";
 const SponsorsSectionV2 = () => {
   const s = sectionsV2.sponsors;
   return (
-    <section className="py-20 sm:py-28 px-4" style={{ backgroundColor: "#0a0e1a" }}>
+    <section className="py-20 sm:py-28 px-4">
       <div className="max-w-5xl mx-auto text-center">
         <h2 className="font-display text-4xl sm:text-5xl mb-4" style={gradientText}>
           {s.title}

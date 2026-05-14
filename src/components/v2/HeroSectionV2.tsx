@@ -1,14 +1,12 @@
 import { motion } from "framer-motion";
 import { Calendar, Clock, MapPin, Zap } from "lucide-react";
-import StarField from "./StarField";
 import CountdownV2 from "./CountdownV2";
 import Logo from "@/components/Logo";
 import { eventV2 } from "@/data/content-v2";
 import { g, gradientText } from "./theme";
 
 const HeroSectionV2 = () => (
-  <section className="relative min-h-screen flex items-center justify-center overflow-hidden" style={{ backgroundColor: "#080b14" }}>
-    <StarField />
+  <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
 
     {/* Radial green glow from bottom-center */}
     <div
@@ -60,7 +58,7 @@ const HeroSectionV2 = () => (
           <h1 className="font-display text-3xl sm:text-5xl md:text-6xl leading-none mb-2" style={{ color: "rgba(255,255,255,0.8)" }}>
             Nuit des Crêtes
           </h1>
-          <h2 className="font-display text-5xl sm:text-7xl md:text-8xl leading-none" style={gradientText}>
+          <h2 className="font-display text-5xl sm:text-7xl md:text-8xl leading-none" style={{ color: g.primary }}>
             d'Entrange
           </h2>
         </div>

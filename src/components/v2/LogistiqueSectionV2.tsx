@@ -5,7 +5,7 @@ import { g, gradientText } from "./theme";
 const LogistiqueSectionV2 = () => {
   const s = sectionsV2.logistique;
   return (
-    <section className="py-20 sm:py-28 px-4" style={{ backgroundColor: "#080b14" }}>
+    <section className="py-20 sm:py-28 px-4">
       <div className="max-w-5xl mx-auto">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}

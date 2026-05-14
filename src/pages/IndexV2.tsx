@@ -1,4 +1,6 @@
+import { useEffect }       from "react";
 import HeroSectionV2      from "@/components/v2/HeroSectionV2";
+import StarField           from "@/components/v2/StarField";
 import StatsBannerV2      from "@/components/v2/StatsBannerV2";
 import AboutSectionV2     from "@/components/v2/AboutSectionV2";
 import RacesSectionV2     from "@/components/v2/RacesSectionV2";
@@ -22,8 +24,18 @@ import FooterV2           from "@/components/v2/FooterV2";
   ───────────────────────────────────────────────────────────────────────────
 */
 
-const IndexV2 = () => (
-  <div>
+const IndexV2 = () => {
+  useEffect(() => {
+    const meta = document.createElement("meta");
+    meta.name = "robots";
+    meta.content = "noindex, nofollow";
+    document.head.appendChild(meta);
+    return () => { document.head.removeChild(meta); };
+  }, []);
+
+  return (
+  <div style={{ backgroundColor: "#080b14" }}>
+    <StarField />
     <HeroSectionV2 />
     <AboutSectionV2 />
     <RacesSectionV2 />
@@ -33,6 +45,7 @@ const IndexV2 = () => (
     <CtaSectionV2 />
     <FooterV2 />
   </div>
-);
+  );
+};
 
 export default IndexV2;

@@ -5,7 +5,7 @@ import { gradientText } from "./theme";
 const RacesSectionV2 = () => {
   const s = sectionsV2.races;
   return (
-    <section id="courses" className="py-20 sm:py-28 px-4" style={{ backgroundColor: "#080b14" }}>
+    <section id="courses" className="py-20 sm:py-28 px-4">
       <div className="max-w-5xl mx-auto">
         <h2 className="font-display text-4xl sm:text-6xl text-center mb-4" style={gradientText}>
           {s.title}

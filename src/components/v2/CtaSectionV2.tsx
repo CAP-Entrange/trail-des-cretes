@@ -3,7 +3,7 @@ import { ctaV2, eventV2 } from "@/data/content-v2";
 import { g } from "./theme";
 
 const CtaSectionV2 = () => (
-  <section id="inscription" className="py-28 px-4 relative overflow-hidden" style={{ backgroundColor: "#080b14" }}>
+  <section id="inscription" className="py-28 px-4 relative overflow-hidden">
     {/* Ambient green glow */}
     <div
       className="absolute inset-0 pointer-events-none"
@@ -42,10 +42,11 @@ const CtaSectionV2 = () => (
         transition={{ delay: 0.25 }}
         className="inline-block font-display text-2xl px-12 py-5 tracking-wider transition-all hover:brightness-110"
         style={{
-          background: g.gradient,
+          backgroundColor: g.primary,
           color: "white",
           boxShadow: `0 0 40px ${g.a25}`,
         }}
+        
       >
         S'inscrire à la Nuit des Crêtes
       </motion.a>

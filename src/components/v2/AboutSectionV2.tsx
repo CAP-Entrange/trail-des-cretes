@@ -3,7 +3,7 @@ import { sectionsV2, aboutV2 } from "@/data/content-v2";
 import { g, gradientText } from "./theme";
 
 const AboutSectionV2 = () => (
-  <section className="py-20 sm:py-28 px-4" style={{ backgroundColor: "#080b14" }}>
+  <section className="py-20 sm:py-28 px-4">
     <div className="max-w-3xl mx-auto text-center">
       <motion.h2
         initial={{ opacity: 0, y: 20 }}

@@ -5,7 +5,7 @@ import { g, gradientText } from "./theme";
 const FooterV2 = () => (
   <footer
     className="py-10 px-4 text-center"
-    style={{ borderTop: `1px solid ${g.a20}`, backgroundColor: "#080b14" }}
+    style={{ borderTop: `1px solid ${g.a20}` }}
   >
     <p className="font-display text-xl mb-2" style={gradientText}>
       {eventV2.name}
