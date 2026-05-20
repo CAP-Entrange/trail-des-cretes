@@ -1,4 +1,4 @@
-import { Info, UtensilsCrossed, Soup, Zap, Shield, Wind, GlassWater, Smartphone, Thermometer, Sparkles } from "lucide-react";
+import { Info, UtensilsCrossed, Soup, Zap, Shield, Wind, GlassWater, Smartphone, Thermometer, Sparkles, TreePine, Heart, Users, Eye, AlertTriangle, Backpack } from "lucide-react";
 
 export { club, sponsors, logistique } from "@/data/content";
 
@@ -55,6 +55,45 @@ export const gearV2 = [
   { icon: Thermometer, label: "Gants & bonnet",                  required: false },
 ];
 
+export const rulesV2 = [
+  {
+    icon: TreePine,
+    title: "Respect de la Nature",
+    subtitle: "Environnement",
+    text: "La forêt nocturne abrite une faune sensible aux perturbations. Restez sur le balisage, évitez les éclairages dirigés vers les sous-bois, et ramenez tous vos déchets. Aucun gobelet jetable — flasque ou gobelet réutilisable obligatoire.",
+  },
+  {
+    icon: Heart,
+    title: "Entraide Nocturne",
+    subtitle: "Solidarité",
+    text: "La nuit, un coureur en difficulté est plus vulnérable. Porter secours est une priorité absolue — le chrono passe après. Restez avec la personne et alertez le poste de contrôle le plus proche.",
+  },
+  {
+    icon: Eye,
+    title: "Visibilité Permanente",
+    subtitle: "Frontale & réfléchissants",
+    text: "La frontale doit rester allumée du départ à l'arrivée, même dans les sections où le balisage est bien visible. Bandes réfléchissantes obligatoires : vous devez être repérable à distance par les bénévoles et les autres coureurs.",
+  },
+  {
+    icon: Backpack,
+    title: "Autonomie & Équipement",
+    subtitle: "Autonomie",
+    text: "Soyez maîtres de votre autonomie. Aucun gobelet jetable ne sera fourni — munissez-vous de votre propre flasque ou gobelet réutilisable. Un bon équipement, c'est aussi respecter les zones naturelles que vous traversez.",
+  },
+  {
+    icon: Users,
+    title: "Courtoisie sur les Sentiers",
+    subtitle: "Fair-play",
+    text: "Les sentiers étroits demandent de la patience la nuit. Annoncez votre dépassement à la voix, laissez le passage avec le sourire, et remerciez les bénévoles qui éclairent la nuit pour vous.",
+  },
+  {
+    icon: AlertTriangle,
+    title: "Signalement d'Abandon",
+    subtitle: "Sécurité",
+    text: "Tout abandon doit être signalé impérativement à un bénévole. Ne quittez jamais le parcours sans prévenir — l'organisation doit savoir où se trouve chaque coureur jusqu'à la dernière frontale.",
+  },
+];
+
 export const sectionsV2 = {
   about: { title: "L'Édition Nuit" },
   races: {
@@ -64,6 +103,11 @@ export const sectionsV2 = {
   gear: {
     title: "Équipement",
     subtitle: "Préparation obligatoire pour courir la nuit en sécurité.",
+  },
+  rules: {
+    title: "Le Règlement",
+    subtitle: "Règlement officiel de la Nuit des Crêtes",
+    description: "Courir de nuit impose des règles supplémentaires : visibilité, sécurité et solidarité sont essentielles pour que la nuit reste une fête.",
   },
   logistique: {
     title: "Sur Place",
