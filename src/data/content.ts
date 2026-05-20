@@ -234,7 +234,7 @@ export const logistique = [
 export const restauration = {
   pack: {
     icon: Star,
-    label: "Pack Course + Sandwich & Boisson",
+    label: "Pack Course: Sandwich & Boisson",
     description: "Optionnel à l'inscription — économisez en réservant à l'avance.",
     price: "+6 €",
   },

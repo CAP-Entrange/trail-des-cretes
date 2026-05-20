@@ -1,6 +1,6 @@
-import { Zap, Shield, Wind, GlassWater, Smartphone, Thermometer } from "lucide-react";
+import { Info, UtensilsCrossed, Soup, Zap, Shield, Wind, GlassWater, Smartphone, Thermometer, Sparkles } from "lucide-react";
 
-export { club, sponsors, logistique, restauration } from "@/data/content";
+export { club, sponsors, logistique } from "@/data/content";
 
 export const eventV2 = {
   name: "Nuit des Crêtes d'Entrange",
@@ -23,7 +23,7 @@ export const racesV2 = [
     subtitle: "Vif, technique & nocturne",
     elevation: "380m D+",
     startTime: "17h30",
-    price: "18€",
+    price: "15€",
     slogan: "Vivacité sous les étoiles.",
     description:
       "Le sentier des crêtes comme vous ne l'avez jamais vu — dans le noir. Les 12 km du tracé habituel révèlent une dimension inédite à la lueur des frontales : les ombres dansent, les contrastes tranchent, et la forêt parle autrement. Montées franches, appuis techniques, quelques ouvrages de la Ligne Maginot qui surgissent de l'obscurité.",
@@ -31,13 +31,13 @@ export const racesV2 = [
       "La nuit, les animaux des crêtes sont bien plus actifs. Chevreuils, renards et rapaces nocturnes peuplent les sentiers que vous arpentez. Les ouvrages Maginot, silencieux le jour, semblent s'animer à la lueur des frontales — le béton prend des reliefs inattendus.",
   },
   {
-    distance: "22 km",
+    distance: "20 km",
     color: "#0c9cf5",
     title: "La Traversée des Forêts",
     subtitle: "Profondeur & obscurité",
-    elevation: "650m D+",
-    startTime: "17h00",
-    price: "22€",
+    elevation: "550m D+",
+    startTime: "17h15",
+    price: "18€",
     slogan: "La nuit amplifie tout.",
     description:
       "22 km dans les zones boisées les plus préservées du plateau, entièrement de nuit. Le tracé traverse des clairières ouvertes spécialement pour la course et longe plusieurs ouvrages de la Ligne Maginot. Seule la frontale, le balisage et vos sensations vous guident. Une expérience de trail hors du commun.",
@@ -47,10 +47,10 @@ export const racesV2 = [
 ];
 
 export const gearV2 = [
-  { icon: Zap,         label: "Frontale + pile de rechange",     required: true  },
-  { icon: Wind,        label: "Coupe-vent / couche thermique",   required: true  },
+  { icon: Zap,         label: "Lampe frontale",     required: true  },
   { icon: Shield,      label: "Couverture de survie",            required: true  },
-  { icon: GlassWater,  label: "Flasque ou gourde (min 500 ml)", required: true  },
+  { icon: Sparkles,        label: "Bandes lumineuses / réfléchissants",   required: true  },
+  { icon: GlassWater,  label: "Flasque ou gourde (min 500 ml)", required: false  },
   { icon: Smartphone,  label: "Téléphone chargé",               required: false },
   { icon: Thermometer, label: "Gants & bonnet",                  required: false },
 ];
@@ -91,4 +91,23 @@ export const aboutV2 = {
 export const ctaV2 = {
   heading: "Prêt à courir dans le noir ?",
   subtext: "21 novembre 2026 — Entrange, Moselle. Les crêtes vous attendent dans l'obscurité.",
+};
+
+export const restaurationV2 = {
+  pack: {
+    icon: UtensilsCrossed,
+    label: "Pack Course: Pâtes & Boisson",
+    description: "Optionnel à l'inscription — un vrai plat chaud pour récupérer après la nuit.",
+    price: "+6 €",
+  },
+  consigne: {
+    icon: Info,
+    text: "Consigne verre",
+    price: "1 €",
+    note: "remboursée à la restitution",
+  },
+  menu: [
+    { icon: Soup, label: "Pâtes chaudes" },
+    { icon: GlassWater, label: "Soft / Bière / Crémant" },
+  ],
 };

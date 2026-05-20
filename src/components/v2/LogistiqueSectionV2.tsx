@@ -1,9 +1,10 @@
 import { motion } from "framer-motion";
-import { logistique, restauration, sectionsV2 } from "@/data/content-v2";
+import { logistique, restaurationV2, sectionsV2 } from "@/data/content-v2";
 import { g, gradientText } from "./theme";
 
 const LogistiqueSectionV2 = () => {
   const s = sectionsV2.logistique;
+  const { pack, consigne, menu } = restaurationV2;
   return (
     <section className="py-20 sm:py-28 px-4">
       <div className="max-w-5xl mx-auto">
@@ -66,17 +67,17 @@ const LogistiqueSectionV2 = () => {
             className="flex items-center gap-4 p-4 rounded-sm mb-6"
             style={{ backgroundColor: g.a10, border: `1px solid ${g.a30}` }}
           >
-            <restauration.pack.icon className="w-6 h-6 shrink-0" style={{ color: g.light }} />
+            <pack.icon className="w-6 h-6 shrink-0" style={{ color: g.light }} />
             <div className="flex-1">
               <p className="text-sm font-medium" style={{ color: "rgba(255,255,255,0.8)" }}>
-                {restauration.pack.label}
+                {pack.label}
               </p>
               <p className="text-xs" style={{ color: "rgba(255,255,255,0.4)" }}>
-                {restauration.pack.description}
+                {pack.description}
               </p>
             </div>
             <span className="font-display text-xl" style={{ color: g.light }}>
-              {restauration.pack.price}
+              {pack.price}
             </span>
           </div>
 
@@ -85,7 +86,7 @@ const LogistiqueSectionV2 = () => {
             {s.menuLabel}
           </p>
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
-            {restauration.menu.map((item) => (
+            {menu.map((item) => (
               <div
                 key={item.label}
                 className="flex flex-col items-center gap-2 p-3 rounded-sm"
@@ -97,6 +98,18 @@ const LogistiqueSectionV2 = () => {
                 </span>
               </div>
             ))}
+          </div>
+
+          {/* Consigne */}
+          <div
+            className="mt-6 pt-4 flex items-center gap-3"
+            style={{ borderTop: `1px solid ${g.a20}` }}
+          >
+            <consigne.icon className="w-4 h-4 shrink-0" style={{ color: "rgba(255,255,255,0.4)" }} />
+            <p className="text-sm" style={{ color: "rgba(255,255,255,0.5)" }}>
+              {consigne.text}{" "}
+              <span style={{ color: "rgba(255,255,255,0.85)", fontWeight: 500 }}>{consigne.price}</span> — {consigne.note}.
+            </p>
           </div>
         </motion.div>
       </div>
