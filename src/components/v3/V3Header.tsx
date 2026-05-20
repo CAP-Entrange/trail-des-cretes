@@ -41,11 +41,8 @@ const V3Header = () => {
         </ClubModal>
 
         {/* Combo CTA */}
-        <a
-          href={comboOffer.registrationUrl}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-flex items-center gap-2 sm:gap-3 px-3 sm:px-4 py-1.5 sm:py-2 rounded-full shadow-lg transition-transform hover:scale-105 text-white"
+        <div
+          className="inline-flex items-center gap-2 sm:gap-3 px-3 sm:px-4 py-1.5 sm:py-2 rounded-full shadow-lg text-white"
           style={{
             background:
               "linear-gradient(135deg, hsl(48, 96%, 53%) 0%, hsl(93, 72%, 44%) 50%, hsl(220, 50%, 18%) 100%)",
@@ -62,7 +59,7 @@ const V3Header = () => {
               <span className="hidden md:inline opacity-90"> · {comboOffer.savings}</span>
             </div>
           </div>
-        </a>
+        </div>
       </div>
     </header>
   );
