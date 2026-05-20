@@ -3,7 +3,7 @@ import { Mountain, Calendar, Clock, Zap } from "lucide-react";
 import { g } from "./theme";
 
 const stats = [
-  { icon: Mountain, label: "2 parcours",          sub: "12 km & 22 km"   },
+  { icon: Mountain, label: "2 parcours",          sub: "12 km & 20 km"   },
   { icon: Calendar, label: "21 Novembre 2026",    sub: "Moselle"         },
   { icon: Clock,    label: "Départ dès 17h00",    sub: "Nuit tombée"     },
   { icon: Zap,      label: "Frontale obligatoire", sub: "Équipement nuit" },

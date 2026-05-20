@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Calendar, Clock, MapPin, Zap } from "lucide-react";
+import { Calendar, Clock, MapPin, Moon, Zap } from "lucide-react";
 import CountdownV2 from "./CountdownV2";
 import Logo from "@/components/Logo";
 import { eventV2 } from "@/data/content-v2";
@@ -34,8 +34,8 @@ const HeroSectionV2 = () => (
           textTransform: "uppercase",
         }}
       >
-        <Zap className="w-3.5 h-3.5" />
-        Édition Nuit · 1ère
+        <Moon className="w-3.5 h-3.5" />
+        Édition Nuit
       </motion.div>
 
       <motion.p

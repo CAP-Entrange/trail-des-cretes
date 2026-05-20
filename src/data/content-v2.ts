@@ -40,7 +40,7 @@ export const racesV2 = [
     price: "18€",
     slogan: "La nuit amplifie tout.",
     description:
-      "22 km dans les zones boisées les plus préservées du plateau, entièrement de nuit. Le tracé traverse des clairières ouvertes spécialement pour la course et longe plusieurs ouvrages de la Ligne Maginot. Seule la frontale, le balisage et vos sensations vous guident. Une expérience de trail hors du commun.",
+      "20 km dans les zones boisées les plus préservées du plateau, entièrement de nuit. Le tracé traverse des clairières ouvertes spécialement pour la course et longe plusieurs ouvrages de la Ligne Maginot. Seule la frontale, le balisage et vos sensations vous guident. Une expérience de trail hors du commun.",
     funFact:
       "À 17h un 21 novembre, le soleil est déjà couché depuis plus d'une heure. Vous courrez dans une obscurité totale, rythmée par le faisceau de votre frontale. Les crêtes forment un couloir naturel entre ciel étoilé et forêt silencieuse — un terrain de course unique en Moselle.",
   },
