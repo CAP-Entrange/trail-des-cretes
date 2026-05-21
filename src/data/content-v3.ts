@@ -17,6 +17,10 @@ export const comboOffer = {
   description:
     "Inscrivez-vous au Trail des Crêtes (jour) et à la Nuit des Crêtes : le Pack Course de l'édition nuit est offert.",
   cta: "S'inscrire aux 2 éditions",
+  packNote:
+    "* Combo 2 Courses : ne prenez pas le Pack Course lors de votre inscription à la Nuit des Crêtes — il vous est offert.",
+  packNoteNight:
+    "* Vous avez fait le Trail des Crêtes (jour) ? Le Pack Course vous est offert — profitez du Combo 2 Courses.",
   // À ajuster quand la promo est finalisée côté Miles Republic / billetterie
   registrationUrl:
     "https://fr.milesrepublic.com/event/trail-des-cretes-dentrange-7158",

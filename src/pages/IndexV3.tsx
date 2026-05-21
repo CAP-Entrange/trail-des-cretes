@@ -3,7 +3,9 @@ import { motion, AnimatePresence } from "framer-motion";
 import { V3ThemeProvider, useV3Theme } from "@/components/v3/V3ThemeContext";
 import V3Header from "@/components/v3/V3Header";
 import HeroSplitV3 from "@/components/v3/HeroSplitV3";
+import ComboBanner from "@/components/v3/ComboBanner";
 import V3ThemeToggle from "@/components/v3/V3ThemeToggle";
+import { comboOffer } from "@/data/content-v3";
 
 // V1 (jour) sections
 import AboutSection from "@/components/AboutSection";
@@ -30,7 +32,10 @@ const DaySections = () => (
   <>
     <AboutSection />
     <RacesSection />
-    <LogistiqueSection />
+    <LogistiqueSection
+      comboNote={comboOffer.packNote}
+      comboBanner={<ComboBanner />}
+    />
     <RulesSection />
     <SponsorsSection />
     <SocialsSection />
@@ -44,7 +49,10 @@ const NightSections = () => (
     <AboutSectionV2 />
     <RacesSectionV2 />
     <GearSectionV2 />
-    <LogistiqueSectionV2 />
+    <LogistiqueSectionV2
+      comboNote={comboOffer.packNoteNight}
+      comboBanner={<ComboBanner />}
+    />
     <RulesSectionV2 />
     <SponsorsSectionV2 />
     <CtaSectionV2 />
