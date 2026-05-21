@@ -101,8 +101,13 @@ const IndexV3 = () => {
     meta.name = "robots";
     meta.content = "noindex, nofollow";
     document.head.appendChild(meta);
+
+    const html = document.documentElement;
+    html.style.scrollPaddingTop = "96px";
+
     return () => {
       document.head.removeChild(meta);
+      html.style.scrollPaddingTop = "";
     };
   }, []);
 
