@@ -222,7 +222,7 @@ export const logistique = [
   {
     icon: Car,
     title: "Parking",
-    text: "Parking gratuit à 3 min de l'A31 (sortie Thionville-Uckange). Places limitées — venez tôt ou covoiturez !",
+    text: "Parking gratuit à 3 min de l'A31 (sortie 44 - Hettange-Grande). Places limitées — venez tôt ou covoiturez !",
   },
   {
     icon: Shirt,
