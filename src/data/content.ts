@@ -72,7 +72,7 @@ export const event = {
 
 export const races = [
   {
-    distance: "12 km",
+    distance: "10 km",
     color: null,
     ribbon: "Marche",
     title: "La Balade des Crêtes",
@@ -82,7 +82,7 @@ export const races = [
     price: "5€",
     slogan: "Marche — accessible à tous.",
     description:
-      "Une randonnée de 12 km ouverte à tous, sur le même tracé que le trail 12 km. À travers les forêts et crêtes du plateau qui borde la frontière franco-luxembourgeoise, familles et curieux découvrent à leur rythme des paysages préservés et plusieurs ouvrages de la Ligne Maginot, discrets témoins d'une histoire enfouie dans la végétation. Ici, c'est le chemin qui compte.",
+      "Une randonnée de 10 km ouverte à tous. À travers les forêts et crêtes du plateau qui borde la frontière franco-luxembourgeoise, familles et curieux découvrent à leur rythme des paysages préservés et plusieurs ouvrages de la Ligne Maginot, discrets témoins d'une histoire enfouie dans la végétation. Ici, c'est le chemin qui compte.",
     funFact:
       "Les crêtes d'Entrange abritent une faune discrète mais variée : chevreuils, rapaces et parfois sangliers croisent les sentiers. Les ouvrages de la Ligne Maginot, aujourd'hui recouverts de mousse et de lierre, sont devenus des refuges naturels pour les chauves-souris et certains insectes rares. La nature a repris ses droits sur le béton, transformant l'histoire en écrin de biodiversité.",
   },
@@ -96,7 +96,7 @@ export const races = [
     price: "15€",
     slogan: "Vivacité et découverte.",
     description:
-      "Le même parcours de 12 km que la marche, couru en trail sur les forêts et crêtes du plateau frontalier. Les sentiers se révèlent autrement à bonne allure : montées franches, appuis techniques, et de belles vues sur la frontière franco-luxembourgeoise. Le tracé longe aussi quelques ouvrages de la Ligne Maginot. Idéal pour découvrir le relief du secteur sans se lancer sur les longues distances.",
+      "Un parcours de 12 km couru en trail sur les forêts et crêtes du plateau frontalier. Les sentiers se révèlent autrement à bonne allure : montées franches, appuis techniques, et de belles vues sur la frontière franco-luxembourgeoise. Le tracé longe aussi quelques ouvrages de la Ligne Maginot. Idéal pour découvrir le relief du secteur sans se lancer sur les longues distances.",
     funFact:
       "Le secteur d'Entrange se trouve à la jonction de plusieurs écosystèmes forestiers, ce qui en fait un territoire naturellement riche. Les sentiers de crêtes que vous arpentez étaient, il y a moins d'un siècle, des chemins de surveillance militaire. Aujourd'hui, ils sont fréquentés par les coureurs, les randonneurs — et quelques renards très peu farouches.",
   },
