@@ -54,7 +54,7 @@ const V3ThemeToggle = () => {
             aria-pressed={theme === "day"}
           >
             <Sun className="w-4 h-4" />
-            Jour
+            Trail des Crêtes
           </button>
           <button
             type="button"
@@ -69,7 +69,7 @@ const V3ThemeToggle = () => {
             aria-pressed={theme === "night"}
           >
             <Moon className="w-4 h-4" />
-            Nuit
+            Nuit des Crêtes
           </button>
         </div>
       </div>
