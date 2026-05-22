@@ -77,7 +77,7 @@ export const races = [
     ribbon: "Marche",
     title: "La Balade des Crêtes",
     subtitle: "Nature & découverte",
-    elevation: "300m D+",
+    elevation: "380m D+",
     startTime: "10h00",
     price: "5€",
     slogan: "Marche — accessible à tous.",
