@@ -11,7 +11,7 @@ export const eventV2 = {
   isoDate: "2026-11-21T17:00:00+01:00",
   startTime: "17h00",
   location: "Entrange, Moselle",
-  registrationUrl: "https://fr.milesrepublic.com/event/trail-des-cretes-dentrange-7158",
+  registrationUrl: "https://chronopro.net/produit/trail-nocturne-des-cretes-dentrange/",
   contactEmail: "yves.moreau6@orange.fr",
 };
 
