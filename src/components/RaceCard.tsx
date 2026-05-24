@@ -118,7 +118,7 @@ const RaceCard = ({
           href={registrationUrl} target="_blank"
           className="block text-center bg-primary text-primary-foreground font-display text-lg px-6 py-3 tracking-wider hover:brightness-110 transition-all"
         >
-          S'engager — {distance}
+          S'inscrire — {distance}
         </a>
       </div>
     </motion.div>
