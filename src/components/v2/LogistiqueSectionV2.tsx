@@ -1,8 +1,14 @@
+import { type ReactNode } from "react";
 import { motion } from "framer-motion";
 import { logistique, restaurationV2, sectionsV2 } from "@/data/content-v2";
 import { g, gradientText } from "./theme";
 
-const LogistiqueSectionV2 = () => {
+type Props = {
+  comboNote?: string;
+  comboBanner?: ReactNode;
+};
+
+const LogistiqueSectionV2 = ({ comboNote, comboBanner }: Props) => {
   const s = sectionsV2.logistique;
   const { pack, consigne, menu } = restaurationV2;
   return (
@@ -70,7 +76,7 @@ const LogistiqueSectionV2 = () => {
             <pack.icon className="w-6 h-6 shrink-0" style={{ color: g.light }} />
             <div className="flex-1">
               <p className="text-sm font-medium" style={{ color: "rgba(255,255,255,0.8)" }}>
-                {pack.label}
+                {pack.label}{comboNote ? " *" : ""}
               </p>
               <p className="text-xs" style={{ color: "rgba(255,255,255,0.4)" }}>
                 {pack.description}
@@ -111,7 +117,20 @@ const LogistiqueSectionV2 = () => {
               <span style={{ color: "rgba(255,255,255,0.85)", fontWeight: 500 }}>{consigne.price}</span> — {consigne.note}.
             </p>
           </div>
+
+          {comboNote && (
+            <div
+              className="mt-4 pt-3"
+              style={{ borderTop: `1px solid ${g.a15}` }}
+            >
+              <p className="text-xs italic" style={{ color: "rgba(255,255,255,0.35)" }}>
+                {comboNote}
+              </p>
+            </div>
+          )}
         </motion.div>
+
+        {comboBanner && <div className="mt-6">{comboBanner}</div>}
       </div>
     </section>
   );

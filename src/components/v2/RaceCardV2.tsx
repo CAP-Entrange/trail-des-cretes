@@ -120,7 +120,7 @@ const RaceCardV2 = ({
           className="block text-center font-display text-lg px-6 py-3 tracking-wider transition-all hover:brightness-110"
           style={{ backgroundColor: color, color: "white" }}
         >
-          S'engager — {distance}
+          S'inscrire — {distance}
         </a>
       </div>
     </motion.div>

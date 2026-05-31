@@ -64,7 +64,7 @@ export const event = {
   isoDate: "2026-09-20T10:00:00+02:00",
   startTime: "9h30",
   location: "Entrange, Moselle",
-  registrationUrl: "https://fr.milesrepublic.com/event/trail-des-cretes-dentrange-7158",
+  registrationUrl: "https://chronopro.net/produit/9eme-trail-dentrange/",
   contactEmail: "yves.moreau6@orange.fr",
 };
 
@@ -222,7 +222,7 @@ export const logistique = [
   {
     icon: Car,
     title: "Parking",
-    text: "Parking gratuit à 3 min de l'A31 (sortie Thionville-Uckange). Places limitées — venez tôt ou covoiturez !",
+    text: "Parking gratuit à 3 min de l'A31 (sortie 44 - Hettange-Grande). Places limitées — venez tôt ou covoiturez !",
   },
   {
     icon: Shirt,
