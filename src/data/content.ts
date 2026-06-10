@@ -25,7 +25,7 @@ import chezBarbLogo from "@/assets/sponsors/barb.png";
 import InflorescenceLogo from "@/assets/sponsors/inflorescence.png";
 import sebMotoLogo from "@/assets/sponsors/sebmoto.svg";
 import tableOrientaleLogo from "@/assets/sponsors/la-table-orientale.png";
-import vChalicarneLogo from "@/assets/sponsors/vchalicarne.png";
+import vChalicarneLogo from "@/assets/sponsors/gallys.jpg";
 import scoiffLogo from "@/assets/sponsors/scoiff.png";
 import concertauxLogo from "@/assets/sponsors/concertaux.png";
 import jsdCoiffureLogo from "@/assets/sponsors/jsd_coiffure.png";
