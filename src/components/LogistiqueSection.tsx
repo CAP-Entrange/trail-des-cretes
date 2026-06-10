@@ -1,7 +1,13 @@
+import { type ReactNode } from "react";
 import { motion } from "framer-motion";
 import { logistique, restauration, sections } from "@/data/content";
 
-const LogistiqueSection = () => {
+type Props = {
+  comboNote?: string;
+  comboBanner?: ReactNode;
+};
+
+const LogistiqueSection = ({ comboNote, comboBanner }: Props) => {
   const { pack, consigne, menu } = restauration;
   const s = sections.logistique;
 
@@ -64,7 +70,7 @@ const LogistiqueSection = () => {
               <pack.icon className="w-5 h-5" />
             </div>
             <div className="flex-1">
-              <p className="font-display text-lg text-primary tracking-wide">{pack.label}</p>
+              <p className="font-display text-lg text-primary tracking-wide">{pack.label}{comboNote ? " *" : ""}</p>
               <p className="text-foreground/70 text-sm mt-0.5">{pack.description}</p>
             </div>
             <div className="text-right flex-shrink-0">
@@ -99,7 +105,15 @@ const LogistiqueSection = () => {
               {consigne.text} <span className="text-foreground/80 font-medium">{consigne.price}</span> — {consigne.note}.
             </p>
           </div>
+
+          {comboNote && (
+            <div className="px-6 py-3 border-t border-border">
+              <p className="text-xs text-muted-foreground italic">{comboNote}</p>
+            </div>
+          )}
         </motion.div>
+
+        {comboBanner && <div className="mt-6">{comboBanner}</div>}
       </div>
     </section>
   );
