@@ -1,6 +1,6 @@
 import { type ReactNode } from "react";
 import { motion } from "framer-motion";
-import { logistique, restaurationV2, sectionsV2 } from "@/data/content-v2";
+import { logistique, restaurationV2, sectionsV2, mapV2 } from "@/data/content-v2";
 import { g, gradientText } from "./theme";
 
 type Props = {
@@ -52,6 +52,34 @@ const LogistiqueSectionV2 = ({ comboNote, comboBanner }: Props) => {
             </motion.div>
           ))}
         </div>
+
+        {/* Carte */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className="mb-10 overflow-hidden"
+          style={{ border: `1px solid ${g.a20}`, backgroundColor: "#0d1220" }}
+        >
+          <iframe
+            title={mapV2.title}
+            loading="lazy"
+            className="w-full h-72 sm:h-96 block"
+            src={`https://www.openstreetmap.org/export/embed.html?bbox=${mapV2.lon - mapV2.zoomDelta * 2},${mapV2.lat - mapV2.zoomDelta},${mapV2.lon + mapV2.zoomDelta * 2},${mapV2.lat + mapV2.zoomDelta}&layer=mapnik&marker=${mapV2.lat},${mapV2.lon}`}
+          />
+          <div className="flex items-center justify-between gap-4 px-4 py-3 text-sm">
+            <span style={{ color: "rgba(255,255,255,0.6)" }}>{mapV2.title}</span>
+            <a
+              href={`https://www.google.com/maps/dir/?api=1&destination=${mapV2.lat},${mapV2.lon}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:underline"
+              style={{ color: g.light }}
+            >
+              Itinéraire →
+            </a>
+          </div>
+        </motion.div>
 
         {/* Restauration */}
         <motion.div

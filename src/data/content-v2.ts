@@ -15,6 +15,13 @@ export const eventV2 = {
   contactEmail: "yves.moreau6@orange.fr",
 };
 
+export const mapV2 = {
+  title: "Lieu de départ & parking",
+  lat: 49.418333,
+  lon: 6.115694,
+  zoomDelta: 0.004,
+};
+
 export const racesV2 = [
   {
     distance: "12 km",
