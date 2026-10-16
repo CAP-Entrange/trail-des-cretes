@@ -35,7 +35,7 @@ const HeroSectionV2 = () => (
         }}
       >
         <Moon className="w-3.5 h-3.5" />
-        Édition Nuit
+        Trail Crépusculaire
       </motion.div>
 
       <motion.p
@@ -54,9 +54,9 @@ const HeroSectionV2 = () => (
         transition={{ delay: 0.4 }}
         className="inline-flex items-stretch gap-4 mb-8"
       >
-        <div className="text-left">
+        <div className="text-center">
           <h1 className="font-display text-3xl sm:text-5xl md:text-6xl leading-none mb-2" style={{ color: "rgba(255,255,255,0.8)" }}>
-            Nuit des Crêtes
+            Trail Crépusculaire des Crêtes
           </h1>
           <h2 className="font-display text-5xl sm:text-7xl md:text-8xl leading-none" style={{ color: g.primary }}>
             d'Entrange

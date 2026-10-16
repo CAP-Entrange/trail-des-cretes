@@ -48,7 +48,7 @@ const CtaSectionV2 = () => (
         }}
         
       >
-        S'inscrire à la Nuit des Crêtes
+        S'inscrire au Trail Crépusculaire
       </motion.a>
     </div>
   </section>

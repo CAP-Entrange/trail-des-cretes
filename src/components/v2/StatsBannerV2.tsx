@@ -5,7 +5,7 @@ import { g } from "./theme";
 const stats = [
   { icon: Mountain, label: "2 parcours",          sub: "12 km & 20 km"   },
   { icon: Calendar, label: "21 Novembre 2026",    sub: "Moselle"         },
-  { icon: Clock,    label: "Départ dès 17h00",    sub: "Nuit tombée"     },
+  { icon: Clock,    label: "Départ dès 16h30",    sub: "Au crépuscule"     },
   { icon: Zap,      label: "Frontale obligatoire", sub: "Équipement nuit" },
 ];
 

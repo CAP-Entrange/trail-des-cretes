@@ -3,13 +3,13 @@ import { Info, UtensilsCrossed, Soup, Zap, Shield, Wind, GlassWater, Smartphone,
 export { club, sponsors, logistique } from "@/data/content";
 
 export const eventV2 = {
-  name: "Nuit des Crêtes d'Entrange",
+  name: "Trail Crépusculaire des Crêtes d'Entrange",
   organizer: "CAP Entrange",
   edition: 1,
   tagline: "Quand la forêt s'éteint, les coureurs s'allument.",
   date: "21 Novembre 2026",
-  isoDate: "2026-11-21T17:00:00+01:00",
-  startTime: "17h00",
+  isoDate: "2026-11-21T16:30:00+01:00",
+  startTime: "16h30",
   location: "Entrange, Moselle",
   registrationUrl: "https://chronopro.net/produit/trail-nocturne-des-cretes-dentrange/",
   contactEmail: "yves.moreau6@orange.fr",
@@ -22,7 +22,7 @@ export const racesV2 = [
     title: "Le Sentier des Crêtes",
     subtitle: "Vif, technique & nocturne",
     elevation: "380m D+",
-    startTime: "17h30",
+    startTime: "16h50",
     price: "15€",
     slogan: "Vivacité sous les étoiles.",
     description:
@@ -35,14 +35,14 @@ export const racesV2 = [
     color: "#0c9cf5",
     title: "La Traversée des Forêts",
     subtitle: "Profondeur & obscurité",
-    elevation: "550m D+",
-    startTime: "17h15",
+    elevation: "650m D+",
+    startTime: "16h30",
     price: "18€",
     slogan: "La nuit amplifie tout.",
     description:
-      "20 km dans les zones boisées les plus préservées du plateau, entièrement de nuit. Le tracé traverse des clairières ouvertes spécialement pour la course et longe plusieurs ouvrages de la Ligne Maginot. Seule la frontale, le balisage et vos sensations vous guident. Une expérience de trail hors du commun.",
+      "20 km dans les zones boisées les plus préservées du plateau, du crépuscule à la nuit noire. Le tracé traverse des clairières ouvertes spécialement pour la course et longe plusieurs ouvrages de la Ligne Maginot. Seule la frontale, le balisage et vos sensations vous guident. Une expérience de trail hors du commun.",
     funFact:
-      "À 17h un 21 novembre, le soleil est déjà couché depuis plus d'une heure. Vous courrez dans une obscurité totale, rythmée par le faisceau de votre frontale. Les crêtes forment un couloir naturel entre ciel étoilé et forêt silencieuse — un terrain de course unique en Moselle.",
+      "Un 21 novembre, le soleil se couche avant 17h. Vous partez au crépuscule et finissez dans une obscurité totale, rythmée par le faisceau de votre frontale. Les crêtes forment un couloir naturel entre ciel étoilé et forêt silencieuse — un terrain de course unique en Moselle.",
   },
 ];
 
@@ -95,7 +95,7 @@ export const rulesV2 = [
 ];
 
 export const sectionsV2 = {
-  about: { title: "L'Édition Nuit" },
+  about: { title: "Le Trail Crépusculaire" },
   races: {
     title: "Les Parcours",
     subtitle: "Deux courses entièrement de nuit sur les crêtes et forêts d'Entrange.",
@@ -106,19 +106,19 @@ export const sectionsV2 = {
   },
   rules: {
     title: "Le Règlement",
-    subtitle: "Règlement officiel de la Nuit des Crêtes",
+    subtitle: "Règlement officiel du Trail Crépusculaire des Crêtes",
     description: "Courir de nuit impose des règles supplémentaires : visibilité, sécurité et solidarité sont essentielles pour que la nuit reste une fête.",
   },
   logistique: {
     title: "Sur Place",
     subtitle: "Briefing, départs et confort pour la nuit",
     restaurationTitle: "Restauration & boissons chaudes",
-    restaurationSubtitle: "Buvette ouverte dès 16h — boissons chaudes disponibles",
+    restaurationSubtitle: "Buvette ouverte dès 15h30 — boissons chaudes disponibles",
     menuLabel: "Au menu",
   },
   sponsors: {
     title: "Nos Partenaires",
-    subtitle: "Ils soutiennent la Nuit des Crêtes d'Entrange",
+    subtitle: "Ils soutiennent le Trail Crépusculaire des Crêtes d'Entrange",
     partnershipLabel: "Intéressé par un partenariat ?",
     partnershipCta: "Contactez-nous",
   },
@@ -127,7 +127,7 @@ export const sectionsV2 = {
 export const aboutV2 = {
   paragraphs: [
     "Quand la nuit tombe sur les crêtes d'Entrange, le paysage se transforme. Les silhouettes des arbres se découpent sur un ciel étoilé, les ouvrages de la Ligne Maginot surgissent dans les halos de frontale, et le silence de la forêt prend une densité particulière.",
-    "La Nuit des Crêtes, c'est une expérience sensorielle radicalement différente : les repères visuels s'effacent, les sens s'aiguisent, et chaque kilomètre gagne en intensité. Un trail de nuit n'est pas simplement un trail dans le noir — c'est un rapport nouveau à l'effort, à la nature, à soi.",
+    "Le Trail Crépusculaire des Crêtes, c'est une expérience sensorielle radicalement différente : les repères visuels s'effacent, les sens s'aiguisent, et chaque kilomètre gagne en intensité. Un trail de nuit n'est pas simplement un trail dans le noir — c'est un rapport nouveau à l'effort, à la nature, à soi.",
   ],
   closing: "Deux parcours, une seule nuit, des crêtes pour vous seuls.",
 };
